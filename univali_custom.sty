@@ -1,0 +1,454 @@
+%%
+%% Customizações do abnTeX2 (http://abnTeX2.googlecode.com) para a Universidade XXXX
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%% 
+%% The Current Maintainer of this work is Marlon Cordeiro Domenech (marloncdomenech@univali.br)
+%%
+%% Further information about abnTeX2 are available on http://abntex2.googlecode.com/
+%%
+
+% ---
+% INICIO DAS CUSTOMIZACOES PARA O MODELO DE DISSERTAÇÃO DO MESTRADO EM COMPUTAÇÃO APLICADA (MCA) DA UNIVERSIDADE DO VALE DO ITAJAÍ (UNIVALI)
+% ---
+
+% Redefine tamanhos de fontes
+\renewcommand\Large{\@setfontsize\Large{16}{16}}
+\renewcommand\large{\@setfontsize\large{14}{14}}
+\renewcommand\normalsize{\@setfontsize\normalsize{12}{12}}
+
+% -----------------------------------------------------------------------------
+% FORMATACAO DAS PAGINAS
+% -----------------------------------------------------------------------------
+% Definicao das margens e espaçamentos
+\setlrmarginsandblock{2cm}{2cm}{*} % externa / interna
+\setulmarginsandblock{3cm}{3cm}{*} % superior / inferior
+\checkandfixthelayout
+
+
+% Recuo do paragrafo
+\setlength{\parindent}{1.25cm}
+% espaco entre os paragrafos
+\setlength{\parskip}{12pt}
+
+
+% Espacamentos nos titulos:
+% chapter
+\setlength{\afterchapskip}{30pt}
+% section
+\setbeforesecskip{24pt}
+\setaftersecskip{\onelineskip}
+% subsection
+\setbeforesubsecskip{24pt}
+\setaftersubsecskip{\onelineskip}
+% subsubsection
+\setbeforesubsubsecskip{24pt}
+\setaftersubsubsecskip{\onelineskip}
+% subsubsubsection
+\setbeforeparaskip{24pt}
+\setafterparaskip{\onelineskip}
+
+
+
+% Redefine Fontes dos Titulos
+\renewcommand{\ABNTEXchapterfont}{\bfseries}
+\renewcommand{\ABNTEXchapterfontsize}{\Large}
+\setboolean{ABNTEXupperchapter}{true}
+
+%\newcommand{\ABNTEXpartfont}{\ABNTEXchapterfont}
+%\newcommand{\ABNTEXpartfontsize}{\ABNTEXchapterfontsize}
+
+\renewcommand{\ABNTEXsectionfont}{\bfseries}
+\renewcommand{\ABNTEXsectionfontsize}{\large}
+\setboolean{ABNTEXuppersection}{true}
+
+\renewcommand{\ABNTEXsubsectionfont}{\bfseries}
+\renewcommand{\ABNTEXsubsectionfontsize}{\large}
+
+\renewcommand{\ABNTEXsubsubsectionfont}{\bfseries}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXsubsubsubsectionfont}{\bfseries}
+\renewcommand{\ABNTEXsubsubsubsectionfontsize}{\normalsize}
+
+% Redefine Fonte Padrão
+\renewcommand{\sfdefault}{ptm}
+\renewcommand{\rmdefault}{ptm}
+
+% Comandos de dados - subtitulo do documento
+\providecommand{\imprimirsubtitulo}{}
+\newcommand{\subtitulo}[1]{\renewcommand{\imprimirsubtitulo}{#1}}
+
+% Redefine seção de agradecimentos
+\renewcommand{\agradecimentosname}{\fontencoding{OT1}\bfseries\fontshape{n}\Large\selectfont{AGRADECIMENTOS}}
+
+% Redefine títulos de Seções
+%\renewcommand{\resumoname}{RESUMO}
+\renewcommand{\listadesiglasname}{\fontencoding{OT1}\bfseries\fontshape{n}\Large\selectfont{LISTA DE ABREVIATURAS E SIGLAS}}
+\renewcommand{\listadesimbolosname}{\fontencoding{OT1}\bfseries\fontshape{n}\Large\selectfont{LISTA DE S\'IMBOLOS}}
+\renewcommand{\contentsname}{\fontencoding{OT1}\bfseries\fontshape{n}\Large\selectfont{SUM\'ARIO}}
+
+\addto\captionsbrazil{% portugues-brasil
+  %% ajusta nomes padroes do babel
+  %\renewcommand{\bibname}{Refer\^encias}
+  %\renewcommand{\indexname}{\'Indice}
+  \renewcommand{\listfigurename}{\fontencoding{OT1}\bfseries\fontshape{n}\Large\selectfont{LISTA DE ILUSTRA\c{C}\~{O}ES}}
+  \renewcommand{\listtablename}{\fontencoding{OT1}\bfseries\fontshape{n}\Large\selectfont{LISTA DE TABELAS}}  
+  %\renewcommand{\listofquadroname}{\fontencoding{OT1}\bfseries\fontshape{n}\Large\selectfont{LISTA DE QUADROS}}
+  %% ajusta nomes usados com a macro \autoref
+  %\renewcommand{\pageautorefname}{p\'agina}
+  %\renewcommand{\sectionautorefname}{se{\c c}\~ao}
+  %\renewcommand{\subsectionautorefname}{subse{\c c}\~ao}
+  %\renewcommand{\subsubsectionautorefname}{subse{\c c}\~ao}
+  %\renewcommand{\paragraphautorefname}{subse{\c c}\~ao}
+}
+
+% lista de ilustracoes
+\renewcommand{\cftfigurename}{\figurename\space} 
+\renewcommand*{\cftfigureaftersnum}{.}
+
+% lista de tabelas  
+\renewcommand{\cfttablename}{\tablename\space}
+\renewcommand*{\cfttableaftersnum}{.}	
+
+% lista de quadros
+%\renewcommand{\cftquadroname}{\quadroname\space}
+%\renewcommand*{\cftquadroaftersnum}{.}	
+
+
+% Comandos de dados - Resumo e Abstract
+\providecommand{\imprimirlinhadepesquisa}{}
+\newcommand{\linhadepesquisa}[1]{\renewcommand{\imprimirlinhadepesquisa}{#1}}
+%---
+\providecommand{\imprimirresearchline}{}
+\newcommand{\researchline}[1]{\renewcommand{\imprimirresearchline}{#1}}
+%---
+\providecommand{\imprimirnumpaginas}{}
+\newcommand{\numpaginas}[1]{\renewcommand{\imprimirnumpaginas}{#1}}
+%---
+\providecommand{\imprimirpalavraschave}{}
+\newcommand{\palavraschave}[1]{\renewcommand{\imprimirpalavraschave}{#1}}
+%---
+\providecommand{\imprimirkeywords}{}
+\newcommand{\keywords}[1]{\renewcommand{\imprimirkeywords}{#1}}
+%---
+\providecommand{\imprimirenglishmonth}{}
+\newcommand{\englishmonth}[1]{\renewcommand{\imprimirenglishmonth}{#1}}
+%---
+\providecommand{\imprimirtitleenglish}{}
+\newcommand{\titleenglish}[1]{\renewcommand{\imprimirtitleenglish}{#1}}
+%---
+\providecommand{\imprimirsubtitleenglish}{}
+\newcommand{\subtitleenglish}[1]{\renewcommand{\imprimirsubtitleenglish}{#1}}
+
+
+
+% Comandos de dados - datas
+\providecommand{\imprimirmes}{}
+\newcommand{\mes}[1]{\renewcommand{\imprimirmes}{#1}}
+
+\providecommand{\imprimirano}{}
+\newcommand{\ano}[1]{\renewcommand{\imprimirano}{#1}}
+
+\renewcommand{\imprimirdata}{\imprimirmes { de} \imprimirano}
+
+
+%------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+% alterando a capa
+\renewcommand{\imprimircapa}{%
+  \begin{capa}%
+    \center
+    %\ABNTEXchapterfont\Large UNIVERSIDADE QUE TORNA OS DOCUMENTOS AINDA MAIS ESTRANHOS
+    
+    %\vspace*{1cm}
+    
+    \fontencoding{OT1}\fontseries{b}\fontshape{n}\Large\selectfont \MakeTextUppercase\imprimirautor
+    
+    %\ABNTEXchapterfont\large\MakeTextUppercase\imprimirautor
+
+    \vfill
+    \fontencoding{OT1}\fontseries{b}\fontshape{n}\Large\selectfont \MakeTextUppercase\imprimirtitulo
+    
+    \fontencoding{OT1}\fontseries{m}\fontshape{n}\large\selectfont \MakeTextUppercase\imprimirsubtitulo
+    
+    \vfill
+    
+    \fontencoding{OT1}\fontseries{m}\fontshape{n}\large\selectfont \imprimirlocal, \imprimirdata
+    
+    %\large\imprimirlocal, \large\imprimirdata
+    
+    \vspace*{1cm}
+  \end{capa}
+}
+%------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+
+
+%------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+% folha de rosto 
+
+%\makeatletter
+
+\renewcommand{\folhaderostocontent}{
+ \begin{figure}[h!]%
+     \centering%
+     \includegraphics[scale=0.5]{figs/logo.png}%
+ \end{figure}%
+ 
+\begin{center}
+{\fontencoding{OT1}\fontseries{b}\fontshape{n}\Large\selectfont \imprimirinstituicao}
+    
+\vspace*{\fill}\vspace*{\fill}\vspace*{\fill}\vspace*{\fill}
+    
+\begin{center}
+  \fontencoding{OT1}\fontseries{b}\fontshape{n}\Large\selectfont \MakeTextUppercase\imprimirtitulo
+  
+  \fontencoding{OT1}\fontseries{m}\fontshape{n}\large\selectfont \MakeTextUppercase\imprimirsubtitulo
+\end{center}
+   
+  \vspace*{\fill}\vspace*{\fill}\vspace*{\fill}
+  
+  \fontencoding{OT1}\fontseries{m}\fontshape{n}\large\selectfont por
+  
+  \vspace*{\fill}
+  
+{\fontencoding{OT1}\fontseries{m}\fontshape{n}\large\selectfont \imprimirautor}
+
+\vspace*{\fill}
+
+
+
+\vspace*{\fill}
+
+\abntex@ifnotempty{\imprimirpreambulo}{%
+  \hspace{.45\textwidth}
+  \begin{minipage}{.5\textwidth}
+  \SingleSpacing
+  \normalsize\imprimirpreambulo\par
+  \normalsize\imprimirorientadorRotulo~\imprimirorientador\par
+  \abntex@ifnotempty{\imprimircoorientador}{%
+    {\normalsize\imprimircoorientadorRotulo~\imprimircoorientador}%
+  }%
+  \end{minipage}%
+  \vspace*{\fill}
+}%
+
+%{\large\imprimirorientadorRotulo~\imprimirorientador\par}
+
+% \abntex@ifnotempty{\imprimircoorientador}{%
+%   {\large\imprimircoorientadorRotulo~\imprimircoorientador}%
+% }%
+
+\vspace*{\fill}
+
+%{\abntex@ifnotempty{\imprimirinstituicao}{\imprimirinstituicao\vspace*{\fill}}}
+
+\large\imprimirlocal, \large\imprimirdata
+\vspace*{1cm}
+\end{center}
+}
+
+%------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+
+
+%------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+% Formatação de Resumo
+
+\renewenvironment{resumo}%[1]{\resumoname}
+{ %\PRIVATEbookmarkthis{#1}
+\begin{center}
+\fontencoding{OT1}\fontseries{b}\fontshape{n}\Large\selectfont \MakeTextUppercase\imprimirtitulo
+
+\fontencoding{OT1}\fontseries{m}\fontshape{n}\Large\selectfont \MakeTextUppercase\imprimirsubtitulo
+\vspace{0.3cm}
+
+\large\imprimirautor
+
+\large\imprimirmes { / } \large\imprimirano
+
+\vspace{0.3cm}
+\end{center}
+
+\noindent Orientadora: \normalsize\imprimirorientador
+
+%\abntex@ifnotempty{\imprimircoorientador}{%
+%{\normalsize\imprimircoorientadorRotulo~\imprimircoorientador}}%
+
+\abntex@ifnotempty{\imprimircoorientador}{%
+{\noindent Coorientador: \normalsize\imprimircoorientador}}%
+
+\noindent Área de Concentração: Computação Aplicada
+
+\noindent Linha de Pesquisa: \normalsize\imprimirlinhadepesquisa
+
+\noindent Palavras-chave: \normalsize\imprimirpalavraschave
+
+\noindent Número de páginas: \normalsize\pageref{LastPage}
+
+\vspace{0.3cm}
+
+{\fontencoding{OT1}\fontseries{b}\fontshape{n}\Large\selectfont \noindent{RESUMO}}
+
+\vspace{0.2cm}
+}{}
+
+%---
+%---
+
+\renewenvironment{abstract}%[1]{\resumoname}
+{ %\PRIVATEbookmarkthis{#1}
+\begin{center}
+\fontencoding{OT1}\fontseries{b}\fontshape{n}\Large\selectfont \MakeTextUppercase\imprimirtitleenglish
+
+\fontencoding{OT1}\fontseries{m}\fontshape{n}\Large\selectfont \MakeTextUppercase\imprimirsubtitleenglish
+\vspace{0.3cm}
+
+\large\imprimirautor
+
+\large\imprimirenglishmonth { / } \large\imprimirano
+
+\vspace{0.3cm}
+\end{center}
+
+\noindent Advisor: \normalsize\imprimirorientador
+
+\abntex@ifnotempty{\imprimircoorientador}{%
+{\noindent Co-Advisor: \normalsize\imprimircoorientador}}%
+
+\noindent Area of Concentration: Applied Computer Science
+
+\noindent Research Line: \normalsize\imprimirresearchline
+
+\noindent Keywords: \normalsize\imprimirkeywords
+
+\noindent Number of pages: \normalsize\pageref{LastPage}
+
+\vspace{0.2cm}
+
+{\fontencoding{OT1}\fontseries{b}\fontshape{n}\Large\selectfont \noindent{ABSTRACT}}
+
+\vspace{0.2cm}
+}{}
+
+
+\makeatother
+
+
+
+%------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+
+% Sumário
+\settocdepth{subsection}
+\renewcommand{\printtoctitle}[1]{\centering\fontencoding{OT1}\fontseries{b}\fontshape{n}\Large\selectfont {SUMÁRIO}}
+\renewcommand{\cftdotsep}{0.5}
+
+\renewcommand{\cftchapterpresnum}{\bfseries\Large}
+\renewcommand{\cftchapterformatpnum}{\bfseries\Large}
+
+\makeatletter
+\settocpreprocessor{chapter}{%
+  \let\tempf@rtoc\f@rtoc%
+  \def\f@rtoc{%
+  \texorpdfstring{\bfseries\Large\MakeTextUppercase{\tempf@rtoc}}{\tempf@rtoc}}%
+}
+\makeatother
+
+\renewcommand{\cftsectionfont}{\bfseries\large\uppercase}
+\renewcommand{\cftsectionpresnum}{\bfseries\large}
+\renewcommand{\cftsectionformatpnum}{\bfseries\large}
+
+\renewcommand{\cftsubsectionfont}{\bfseries\normalsize}
+\renewcommand{\cftsubsectionpresnum}{\bfseries\normalsize}
+\renewcommand{\cftsubsectionformatpnum}{\bfseries\normalsize}
+
+
+% ---
+% Apendices - comando - refeito para que não tenha seções no toc
+\renewcommand{\apendices}{%
+ \PRIVATEapendiceconfig{\apendicename}{\apendicesname}
+ \appendix
+}
+% Apendices - ambiente - refeito para que não tenha seções no toc
+\renewenvironment{apendicesenv}{%
+ \PRIVATEapendiceconfig{\apendicename}{\apendicesname}
+ \settocdepth{chapter}
+ \begin{appendix}
+}{
+ \end{appendix}
+ \setboolean{abntex@apendiceousecao}{false}
+ \bookmarksetup{startatroot}
+}
+% ---
+
+% ---
+% Anexos - comando - refeito para que não tenha seções no toc
+\renewcommand{\anexos}{%
+ \cftinserthook{toc}{AAA}
+ 
+ \PRIVATEapendiceconfig{\anexoname}{\anexosname}
+ \appendix
+ \renewcommand\theHchapter{anexochapback.\arabic{chapter}}
+}
+% Anexos - ambiente - refeito para que não tenha seções no toc
+\renewenvironment{anexosenv}{%
+ \cftinserthook{toc}{AAA}
+ 
+ \PRIVATEapendiceconfig{\anexoname}{\anexosname}
+ \settocdepth{chapter}
+ \begin{appendix}
+ \renewcommand\theHchapter{anexochapback.\arabic{chapter}}
+}{
+ \end{appendix}
+ \setboolean{abntex@apendiceousecao}{false}
+ \bookmarksetup{startatroot}
+}
+% ---
+
+
+%------------------------------------------------------------------------------%
+%------------------------------------------------------------------------------%
+
+% Legendas utilizadas em Figuras, tabelas e quadros
+\renewcommand{\legend}{Fonte: }
+\addto\captionsbrazil{\renewcommand{\figurename}{Figura}}
+\addto\captionsbrazil{\renewcommand{\tablename}{Tabela}}
+\addto\captionsbrazil{\renewcommand{\quadroname}{Quadro}}
+\newcommand{\foa}{\legend{Elaborada pelo autor.}}
+\newcommand{\fad}[1]{\legend{Adaptada de \citeonline{#1}.}}
+\newcommand{\fod}[1]{\legend{\citeonline{#1}.}}
+\newcommand{\fodp}{\legend{Dados da pesquisa.}}
+\newcommand{\tablelegend}{\vskip 1\baselineskip \raggedright\legend}
+
+
+% Altera Cabeçalhos dos elementos textuais
+\makepagestyle{univaliheadings}
+%\makeevenhead{univaliheadings}{\ABNTEXfontereduzida\thepage}{}{\ABNTEXfontereduzida\textit\leftmark}
+\makeevenhead{univaliheadings}{}{}{\normalsize\thepage}
+\makeoddhead{univaliheadings}{}{}{\normalsize\thepage}
+\makeheadrule{univaliheadings}{\textwidth}{0pt}
+
+\renewcommand{\textual}{%
+  \pagestyle{univaliheadings}%
+  \aliaspagestyle{chapter}{abntchapfirst}% customizing chapter pagestyle
+  \nouppercaseheads%
+  \bookmarksetup{startatroot}% 
+}
+
+
+
+% ---
+% FIM DAS CUSTOMIZAÇÕES PARA O MODELO DE DISSERTAÇÃO DO MESTRADO EM COMPUTAÇÃO APLICADA (MCA) DA UNIVERSIDADE DO VALE DO ITAJAÍ (UNIVALI)
+% ---

@@ -1,0 +1,219 @@
+%% Como usar o pacote acronym
+
+
+% Na primeira vez que for citado o acronimo, o nome completo 
+% irá aparecer seguido do acronimo entre parênteses. Na 
+% proxima vez somente o acronimo irá aparecer. Se usou a 
+% opção footnote no pacote, entao o nome por extenso irá 
+% aparecer no rodapé \ac{acronimo}
+
+
+% Para aparecer com nome completo + acronimo
+% \acf{acronimo}
+
+% Para aparecer somente o acronimo
+% \acs{acronimo}
+
+% Nome por extenso somente, sem o acronimo
+% \acl{acronimo}
+
+% igual o \ac mas deixando no plural com S (ingles)
+% \acp{acronimo}
+
+% \acfp{acronimo}
+
+% \acsp{acronimo}
+
+% \aclp{acronimo}
+
+%% ATENCAO
+% Criei o comando \acfe{}, resultando em: Extenso -- ACRO
+
+\chapter*{Lista de Abreviaturas}%
+% \addcontentsline{toc}{chapter}{Lista de abreviaturas}
+\markboth{Lista de abreviaturas}{}
+
+
+\begin{acronym}
+
+
+
+
+
+
+
+%A
+\acro{AA}{\textit{Attribute Authority}}
+\acro{ABAC}{\textit{Attribute-Based Access Control}}
+\acro{AC}{Autoridade Certificadora}
+\acro{AD}{\textit{Active Directory}}
+\acro{AES}{\textit{Advanced Encryption Standard}}
+\acro{AP}{\textit{Attribute Provider}}
+\acro{APIs}{\textit{Application Programming Interfaces}}
+\acro{APP}{\textit{Application}}
+\acro{ARC}{\textit{Advanced Resource Connector}}
+\acro{AS}{\textit{Attribute Service}}
+\acro{ASM}{\textit{Authenticator Abstraction Layer}}
+\acro{ASP}{\textit{Application Service Provider}}
+\acro{ATN}{\textit{Automated Trust Negotiation}}
+%B
+\acro{BLE}{\textit{Bluetooth Low Energy}}
+%C
+\acro{CA}{\textit{Certificate Authority}}
+\acro{CN}{\textit{Collaborative Networks}}
+\acro{CNH}{Carteira Nacional de Habilitação}
+\acro{CNPJ}{Cadastro Nacional de Pessoa Jurídica}
+\acro{CPF}{Cadastro de Pessoa Física}
+\acro{CS}{\textit{Consent Service}}
+\acro{CSR}{\textit{Certificate Signing Request}}
+\acro{CPU}{\textit{Central Processing Unit}}
+%D
+\acro{DFN}{\textit{Deutsches Forschungsnetz}}
+\acro{DN}{\textit{Distinguised Name}}
+\acro{DS}{\textit{Discovery Service}}
+\acro{DVO}{\textit{Dynamic Virtual Organization}}
+%E
+\acro{e-CPF}{Cadastro de Pessoal Física Eletrônico}
+\acro{e-CNPJ}{Cadastro Nacional de Pessoa Jurídica Eletrônico}
+\acro{e-Gov}{\textit{Electronic Government}}
+\acro{e-PING}{Padrões de Interoperabilidade em Governo Eletrônico}
+\acro{eID}{\textit{Electronic Identity}}
+\acro{eIDMS}{\textit{electronic Identity Management System}}
+\acro{EGDI}{\textit{e-Government Development Index}}
+\acro{ePWG}{Padrões Web para Governo Eletrônico}
+\acro{ETSI}{\textit{European Telecommunications Standards Institute}}
+%F
+\acro{FIDO}{\textit{Fast IDentity Online}}
+\acro{FIM}{\textit{Federated Identity Management}}
+\acro{FO}{\textit{Federation Operator}}
+%G
+\acro{G2C}{Governo para Cidadão}
+\acro{G2E}{\textit{Government to Employees}}
+\acro{G2G}{Governo para Governo}
+\acro{GId}{Gestão de Identidade}
+\acro{GSI}{\textit{Grid Security Infrastructure}}
+\acro{GTTI}{Grupo de Trabalho Interministerial}
+%H
+\acro{HCE}{\textit{Host-based Card Emulation}}
+\acro{HCI}{\textit{Human Capital Index}}
+\acro{HPC}{\textit{High Performance Computing}}
+\acro{HSM}{\textit{Hardware Security Module}}
+\acro{HTTP}{\textit{Hypertext Transfer Protocol}}
+%I
+\acro{IAA}{\textit{Identity, Authentication, Authorization}}
+\acro{IAF}{\textit{Identity Assurance Framework}}
+\acro{IAM}{\textit{Identity and Access Management}}
+\acro{IBAC}{\textit{Identity-Based Access Control}}
+\acro{ICFF}{\textit{Intercloud Federation Framework}}
+\acro{ICP}{Infraestrutura de Chave Pública}
+\acro{Id}{\textit{Identity}}
+\acro{ID}{Identificador}
+\acro{IDE}{\textit{Integrated Development Environment}}
+\acro{IdM}{\textit{Identity Management System}}
+\acro{IdP}{\textit{Identity Provider}}
+\acro{IGF}{\textit{Identity Governance Framework}}
+\acro{IMSI}{\textit{International Mobile Subscriber Identity}}
+\acro{IP}{\textit{Internet Protocol}}
+\acro{IRPF}{Imposto de Renda de Pessoal Física}
+%J
+\acro{JSON}{\textit{JavaScript Object Notation}}
+%K
+%L
+\acro{LDAP}{\textit{Lightweight Directory Access Protocol}}
+\acro{LSDMA}{\textit{Large Scale Data Management}}
+%M
+\acro{MITM}{\textit{Man-in-The-Middle}}
+\acro{myVOCS}{\textit{my Virtual Organization Collaboration System}}
+%N
+\acro{NFC}{\textit{Near Field Communication}}
+\acro{NREN}{\textit{National Research Education Networks}}
+%O
+\acro{OASIS}{\textit{Organization for the Advancement of Structured Information Standards}}
+\acro{OCSP}{\textit{Online Certificate Status Protocol}}
+\acro{ONG}{Organizações Não Governamentais}
+\acro{OSI}{\textit{Online Service Index}}
+\acro{OTP}{\textit{One-time Password}}
+\acro{OV}{Organização Virtual}
+%P
+\acro{PaaS}{\textit{Plataform-as-a-Service}}
+\acro{PAPI}{\textit{Point of Access to Providers of Information}}
+\acro{PC}{\textit{Professional Communities}}
+\acro{PDP}{\textit{Policy Decision Point}}
+\acro{PEP}{\textit{Policy Enforcement Point}}
+\acro{PERMIS}{\textit{Privilege Managerment Infrastructure}}
+\acro{PKI}{\textit{Public Key Infrastructure}}
+\acro{PIC}{\textit{Personal Identification Code}}
+\acro{PIN}{\textit{Personal Identification Number}}
+\acro{PoA}{\textit{Point of Authentication}}
+\acro{PPP}{Parceria Público-Privada}
+\acro{PVC}{\textit{Professional Virtual Communities}}
+%Q
+%R
+\acro{RA}{\textit{Registration Authority}}
+\acro{RBAC}{\textit{Role-Based Access Control}}
+\acro{RCN}{Registro Civil Nacional}
+\acro{REE}{\textit{Rich Execution Environment}}
+\acro{RIC}{Registro de Identidade Civil}
+\acro{RG}{Registro Geral}
+\acro{RP}{\textit{Relying Party}}
+\acro{RSA}{}
+\acro{RSL}{Revisão Sistemática da Literatura}
+%S
+\acro{SAML}{\textit{Security Assertion Markup Language}}
+\acro{SAT}{\textit{SIM Application Toolkit}}
+\acro{SB}{\textit{Service Broker}}
+\acro{SCE}{\textit{Secure Collaborative Environment}}
+\acro{SE}{\textit{Secure Element}}
+\acro{SEM}{\textit{Scanning Electron Microscope}}
+\acro{SGId}{Sistema de Gestão de Identidade}
+\acro{SIG}{\textit{Special Interest Group}}
+\acro{SIM}{\textit{Subscriber Identification Module}}
+\acro{SISP}{Sistema de Administração dos Recursos de Tecnologia da Informação}
+\acro{SLCS}{\textit{Short Lived Credential Service}}
+\acro{SMC}{\textit{Secure Memory Card}}
+\acro{SO}{Sistema Operacional}
+\acro{SOAP}{\textit{Simple Object Access Protocol}}
+\acro{SoC}{\textit{System on Chip}}
+\acro{SP}{\textit{Service Provider}}
+\acro{SSL}{\textit{Secure Sockets Layer}}
+\acro{SSO}{\textit{Single Sign-On}}
+\acro{SSTC}{\textit{Security Services Technical Committee}}
+\acro{STORK}{\textit{Secure idenTity acrOss boRders linKed}}
+%T
+\acro{TAL}{\textit{Trust Anchor List}}
+\acro{TEE}{\textit{Trusted Execution Environment}}
+\acro{TIC}{Tecnologia da Informação e Comunicação}
+\acro{TII}{\textit{Telecommunication Infrastructure Index}}
+\acro{TLS}{\textit{Transport Layer Security}}
+\acro{TSE}{Tribunal Superior Eleitoral}
+%U
+\acro{U2F}{\textit{Universal Second Factor}}
+\acro{UA}{\textit{User Agent}}
+\acro{UAF}{\textit{Universal Authentication Framework}}
+\acro{UICC}{\textit{Universal Integrated Circuit Card}}
+\acro{URL}{\textit{Uniform Resource Locator}}
+\acro{USB}{\textit{Universal Serial Bus}}
+\acro{USIM}{\textit{Universal Subscriber Identity Module}}
+%V
+\acro{VC}{\textit{Virtual Communities}}
+\acro{VE}{\textit{Virtual Enterprises}}
+\acro{VL}{\textit{Virtual Laboratories}}
+\acro{VMM}{\textit{Virtual Machine Monitor}}
+\acro{VO}{\textit{Virtual Organizations}}
+\acro{VOMS}{\textit{Virtual Organization Management System}}
+\acro{VRE}{\textit{Virtual Research Environment}}
+%W
+\acro{WAYF}{\textit{Where Are You From}}
+\acro{WWW}{\textit{World Wide Web}}
+%X
+\acro{XACML}{\textit{eXtensible Access Control Markup Language}}
+\acro{XML}{\textit{EXtensible Markup Language}}
+%Y
+%Z
+
+
+
+
+
+
+\end{acronym}
