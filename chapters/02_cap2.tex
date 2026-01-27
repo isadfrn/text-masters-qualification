@@ -1,7 +1,7 @@
 \chapter{Fundamentação Teórica}
 \label{c_fundamentacao_teorica}
 
-Este capítulo apresenta os conceitos fundamentais necessários para a compreensão do problema de pesquisa e da análise realizada. A fundamentação está dividida em quatro eixos principais: o cenário global e nacional da força de trabalho em cibersegurança; as disparidades de gênero e barreiras na área tecnológica; as metodologias de ensino, com foco em gamificação e competições; e a caracterização detalhada do objeto de estudo, o Programa \textit{Hackers do Bem}.
+Este capítulo apresenta os conceitos fundamentais necessários para a compreensão do problema de pesquisa e da análise realizada. A fundamentação está dividida em quatro eixos principais: o cenário global e nacional da força de trabalho em cibersegurança; as disparidades de gênero e barreiras na área tecnológica; as metodologias de ensino, com foco em gamificação e competições; e o detalhamento do objeto de estudo, o Programa \textit{Hackers} do Bem.
 
 \section{Cenário da Força de Trabalho em Cibersegurança}
 \label{s_cenario_forca_trabalho_ciberseguranca}
@@ -15,18 +15,18 @@ Dados recentes do \textit{ISC2 Cybersecurity Workforce Study} indicam que a lacu
 
 É importante, no entanto, qualificar a natureza desta escassez. Conforme observam \citeonline{Musuva2025} ao analisarem programas de capacitação, o problema não reside apenas na ausência de candidatos, mas na desconexão entre as competências possuídas pelos estudantes e as habilidades técnicas específicas exigidas pelo mercado. O fenômeno, frequentemente descrito como \textit{skills mismatch}, sugere que a massificação do ensino sem o devido alinhamento com as demandas práticas da indústria, resulta em posições não preenchidas, mesmo em cenários de desemprego estrutural.
 
-O \ac{WEF}, em seu relatório \textit{Global Cybersecurity Outlook 2025}, reforça este cenário ao destacar que a iniquidade da força de trabalho afeta desproporcionalmente setores críticos com menos recursos, como educação, governo e \ac{PMEs} \cite{WEF2025}. No contexto brasileiro, o \ac{WEF} aponta que, embora o país esteja avançando na maturidade cibernética através de iniciativas como a E-Ciber, a escassez de talentos permanece um gargalo que limita a resiliência das infraestruturas nacionais frente à sofisticação crescente das ameaças.
+O \ac{WEF}, em seu relatório \textit{Global Cybersecurity Outlook 2025}, reforça este cenário ao destacar que a iniquidade da força de trabalho afeta desproporcionalmente setores críticos com menos recursos, como educação, governo e \ac{PMEs} \cite{WEF2025}. No contexto brasileiro, o \ac{WEF} aponta que, embora o país esteja avançando na maturidade cibernética através de iniciativas como a E-Ciber, a escassez de talentos permanece um gargalo, que limita a resiliência das infraestruturas nacionais, frente à sofisticação crescente das ameaças.
 
-Portanto, a resolução deste déficit exige estratégias que ultrapassem o recrutamento tradicional, focando no desenvolvimento de competências práticas e na retenção de talentos, uma vez que a simples expansão numérica da força de trabalho, sem a devida qualificação técnica e comportamental, mostra-se insuficiente para mitigar os riscos cibernéticos atuais. Segundo dados recentes \cite{ISC2_2024}, o déficit global ultrapassa milhões de profissionais, com o Brasil figurando como um dos países com maior carência de mão de obra especializada.
+Portanto, a resolução deste déficit exige estratégias que ultrapassem o recrutamento tradicional, focando no desenvolvimento de competências práticas e na retenção de talentos, uma vez que a simples expansão numérica da força de trabalho, sem a devida qualificação técnica e comportamental, mostra-se insuficiente para mitigar os riscos cibernéticos atuais. Segundo dados recentes \cite{ISC2_2024}, o déficit global ultrapassa milhões de profissionais, com o Brasil figurando como um dos países com a maior carência de mão de obra especializada.
 
 \subsection{Políticas Públicas e a Estratégia Nacional (E-Ciber)}
 \label{ss_politicas_publicas_estrategia_nacional}
 
 No contexto brasileiro, a resposta governamental à escassez de mão de obra qualificada materializou-se através da instituição da Estratégia Nacional de Cibersegurança (E-Ciber), formalizada pelo Decreto nº 12.573, de 4 de agosto de 2025 \cite{Decreto12573}. Este instrumento legal redefine a governança do setor e estabelece a educação e a capacitação massiva como pilares fundamentais para a garantia da soberania digital do país.
 
-A E-Ciber está estruturada em eixos temáticos que orientam as ações do Estado. Destaca-se o Eixo 4 (Soberania Nacional e Governança), cujo Artigo 9º, inciso III, determina explicitamente a necessidade de ``formação e capacitação técnico-profissional em cibersegurança em escala compatível com as necessidades nacionais'' \cite{Decreto12573}. Esta diretriz legal justifica a transição de ações de treinamento isoladas para iniciativas de grande porte, visando reduzir o débito tecnológico em tecnologias emergentes e disruptivas.
+A E-Ciber está estruturada em eixos temáticos que orientam as ações do Estado. Destaca-se o Eixo 4 (Soberania Nacional e Governança), cujo Artigo 9º, inciso III, determina explicitamente a necessidade de "formação e capacitação técnico-profissional em cibersegurança em escala compatível com as necessidades nacionais" \cite{Decreto12573}. Esta diretriz legal justifica a transição de ações de treinamento isoladas para iniciativas de grande porte, visando reduzir o débito tecnológico do país.
 
-Complementarmente, o Eixo 1 (Proteção e Conscientização) preconiza o incentivo à inclusão de temas de cibersegurança nos currículos educacionais e a capacitação de profissionais, buscando criar uma cultura de segurança sustentável na sociedade \cite{GSINacional}. É neste cenário regulatório que se insere o Programa \textit{Hackers} do Bem, objeto deste estudo. A iniciativa não surge isoladamente, mas como uma resposta operacional às demandas da E-Ciber e da Política Nacional de Cibersegurança. Financiado pelo \ac{MCTI} no âmbito do \ac{PPI} da Softex, e executado pela \ac{RNP} em parceria com o \ac{SENAI}, o programa visa estruturar um ecossistema nacional de segurança digital, integrando formação, pesquisa e inovação para atender à escala demandada pela legislação vigente \cite{MCTI2025}.
+Adicionalmente, o Eixo 1 (Proteção e Conscientização) preconiza o incentivo à inclusão de temas de cibersegurança nos currículos educacionais e a capacitação de profissionais, buscando criar uma cultura de segurança sustentável na sociedade \cite{GSINacional}. É neste cenário regulatório que se insere o Programa \textit{Hackers} do Bem, objeto deste estudo. A iniciativa não surge isoladamente, mas como uma resposta operacional às demandas da E-Ciber e da Política Nacional de Cibersegurança. Financiado pelo \ac{MCTI} no âmbito do \ac{PPI} da Softex, e executado pela \ac{RNP} em parceria com o \ac{SENAI}, o programa visa estruturar um ecossistema nacional de segurança digital, integrando formação, pesquisa e inovação para também atender à escala demandada pela legislação vigente \cite{MCTI2025}.
 
 \section{Desigualdade de Gênero na Cibersegurança}
 \label{s_desigualdade_genero_ciberseguranca}
@@ -40,25 +40,27 @@ Apesar dos avanços na última década, as mulheres ainda representam uma parcel
 
 Esta estagnação não é uniforme em todo o setor de tecnologia. Conforme analisado por \citeonline{SelmanHousein2025}, ao comparar a cibersegurança com outras subáreas da computação, observa-se que o índice de 25\% é superior ao de campos emergentes como Inteligência Artificial (12\%) e Robótica (11\%), porém significativamente inferior à área de Educação em Computação, onde a representatividade feminina atinge 42\%.
 
-Estes dados sugerem que a barreira não é apenas tecnológica, mas cultural e estrutural específica do domínio de segurança. A persistência deste \textit{gap} ao longo dos anos, mesmo com o aumento da demanda por profissionais, corrobora a existência de um fenômeno de "vazamento de talentos" (\textit{leaky pipeline}), onde as mulheres que ingressam na área encontram dificuldades de permanência e ascensão profissional superiores às observadas em outros setores da TI \cite{SelmanHousein2025}.
+Estes dados sugerem que a barreira não é apenas tecnológica, mas cultural e estrutural, específica do domínio de segurança. A persistência desse \textit{gap} ao longo dos anos, mesmo com o aumento da demanda por profissionais, corrobora com a existência de um fenômeno de "vazamento de talentos" (\textit{leaky pipeline}), onde as mulheres que ingressam na área encontram dificuldades de permanência e ascensão profissional superiores às observadas em outros setores da \ac{TI} \cite{SelmanHousein2025}.
 
 \subsection{Barreiras de Entrada e o Fenômeno do \textit{Leaky Pipeline}}
 \label{ss_barreiras_entrada_fenomeno_leaky_pipeline}
 
 O conceito de \textit{Leaky Pipeline} (vazamento de talentos) descreve a perda progressiva de participação feminina ao longo da jornada educacional e profissional. \citeonline{SelmanHousein2025} identificam que a falta de modelos de referência (\textit{role models}), a percepção de um ambiente hostil e a ausência de mentorias estruturadas são fatores determinantes para a evasão precoce em programas de formação. A revisão da literatura aponta que, mesmo quando o interesse inicial existe, a retenção decai drasticamente entre o ensino médio e a especialização profissional devido à falta de suporte contínuo.
 
-Esta evasão é exacerbada por barreiras culturais e estereótipos profundamente enraizados na área. \citeonline{Costa2025} argumentam que a imagem predominante do profissional de cibersegurança, associada ao estereótipo do "hacker de capuz" isolado ou à cultura excludente do \textit{"brogrammer"}, cria uma dissonância cognitiva para mulheres, que não se enxergam pertencentes a esse grupo. Tais estereótipos perpetuam a falsa noção de que a competência técnica em segurança exige um perfil comportamental antissocial ou agressivamente competitivo.
+Esta evasão é intensificada por barreiras culturais e estereótipos profundamente enraizados na área. \citeonline{Costa2025} argumentam que a imagem predominante do profissional de cibersegurança, associada ao estereótipo do "\textit{hacker} de capuz" isolado ou à cultura excludente do \textit{"brogrammer"}, cria uma dissonância cognitiva para mulheres, que não se enxergam pertencentes a esse grupo. Tais estereótipos perpetuam a falsa noção de que a competência técnica em segurança, exige um perfil comportamental antissocial ou agressivamente competitivo.
 
-Consequentemente, a ausência de representatividade feminina em posições de liderança e a carência de redes de mentoria reforçam este ciclo de exclusão. Sem intervenções deliberadas que desconstruam essas imagens e ofereçam suporte vocacional, como as propostas em programas de capacitação inclusivos, o funil de talentos continuará a perder candidatas qualificadas antes mesmo de sua entrada formal no mercado de trabalho \cite{SelmanHousein2025, Costa2025}.
+Consequentemente, a ausência de representatividade feminina em posições de liderança e a carência de redes de mentoria reforçam este ciclo de exclusão. Sem intervenções deliberadas que desconstruam essas imagens e ofereçam suporte vocacional, como as propostas em programas de capacitação inclusivos, o funil de talentos continuará a perder candidatas qualificadas, antes mesmo de sua entrada formal no mercado de trabalho \cite{SelmanHousein2025, Costa2025}.
 
 \subsection{A Importância das \textit{Soft Skills} na Retenção}
 \label{ss_importancia_soft_skills_retencao}
 
-A valorização excessiva de competências puramente técnicas (\textit{hard skills}) em detrimento de habilidades comportamentais e analíticas (\textit{soft skills}) atua como uma barreira de entrada artificial. A percepção da cibersegurança como uma área restrita à operação técnica de baixo nível ("escovar bit") ignora a complexidade das ameaças modernas, que exigem gestão de crise, comunicação estratégica e liderança adaptativa. \citeonline{Benson2025} argumentam que a reformulação dos currículos para integrar competências como comunicação, gestão de riscos e análise forense é uma estratégia eficaz para aumentar a atratividade da área para o público feminino.
+A valorização excessiva de competências puramente técnicas (\textit{hard skills}) em detrimento de habilidades comportamentais e analíticas (\textit{soft skills}) atua como uma barreira de entrada. A percepção da cibersegurança como uma área restrita à operação técnica de baixo nível, ignora a complexidade das ameaças modernas, que exigem gestão de crise, comunicação estratégica e liderança adaptativa.
 
-O estudo qualitativo conduzido por \citeonline{Benson2025} com profissionais da área na Europa destaca que mulheres frequentemente demonstram níveis elevados de resiliência relacional, empatia e colaboração, atributos essenciais para a resposta a incidentes e gestão de equipes diversificadas. No entanto, as autoras identificam uma lacuna crítica: \textit{frameworks} de competências amplamente utilizados, como o \ac{ECSF}, falham ao não formalizar essas \textit{soft skills} como requisitos de carreira, perpetuando processos de recrutamento e avaliação enviesados para o técnico.
+\citeonline{Benson2025} argumentam que a reformulação dos currículos para integrar competências como comunicação, gestão de riscos e análise forense é uma estratégia eficaz para aumentar a atratividade da área para o público feminino. Seu estudo qualitativo com profissionais da área na Europa destaca que mulheres frequentemente demonstram níveis elevados de resiliência relacional, empatia e colaboração, atributos essenciais para a resposta a incidentes e gestão de equipes diversificadas.
 
-Consequentemente, programas de capacitação que focam exclusivamente em pontuação técnica (como \ac{CTFs} tradicionais) podem inadvertidamente alienar participantes que possuem o perfil analítico e comunicacional demandado pelo mercado, mas que não se identificam com a cultura puramente técnica. A integração formal de \textit{soft skills} na trilha de aprendizado não apenas valida a competência feminina, mas fortalece a resiliência organizacional como um todo.
+No entanto, os autores identificam uma lacuna crítica: \textit{frameworks} de competências amplamente utilizados, como o \ac{ECSF}, falham ao não formalizar essas \textit{soft skills} como requisitos de carreira, perpetuando processos de recrutamento e avaliação enviesados para o técnico.
+
+Consequentemente, programas de capacitação que focam exclusivamente em pontuação técnica (como \ac{CTFs} tradicionais), podem inadvertidamente desviar participantes que possuem o perfil analítico e comunicacional demandado pelo mercado, mas que não se identificam com a cultura puramente técnica. A integração formal de \textit{soft skills} na trilha de aprendizado não apenas valida a competência feminina, mas fortalece a resiliência organizacional como um todo.
 
 \section{Metodologias de Ensino e Gamificação}
 \label{s_metodologias_ensino_gamificacao}
@@ -79,11 +81,11 @@ Segundo \citeonline{Coenraad2020}, para que a gamificação seja efetiva na form
 \subsection{\acf{CTFs} e Competições}
 \label{ss_ctfs_competicoes}
 
-As competições do tipo \ac{CTFs} consolidaram-se como o padrão para o treinamento prático e a avaliação de competências em segurança ofensiva e defensiva. Conforme categorizado por \citeonline{Cole2022}, estes exercícios dividem-se predominantemente em dois formatos: \textit{Jeopardy}, onde equipes resolvem desafios estáticos segregados por categorias (como criptografia, forense e exploração web) para obter pontuações cumulativas; e \textit{Attack-Defense}, onde participantes defendem sua própria infraestrutura enquanto tentam comprometer os sistemas adversários em tempo real.
+As competições do tipo \ac{CTFs} consolidaram-se como o padrão para o treinamento prático e a avaliação de competências em segurança ofensiva e defensiva. Conforme categorizado por \citeonline{Cole2022}, estes exercícios dividem-se predominantemente em dois formatos: \textit{Jeopardy}, onde equipes resolvem desafios estáticos segregados por categorias (como criptografia, forense e exploração web), a fim de obter pontuações cumulativas; e \textit{Attack-Defense}, onde participantes defendem sua própria infraestrutura, enquanto tentam comprometer os sistemas adversários em tempo real.
 
 No âmbito do Programa \textit{Hackers} do Bem, o modelo \textit{Jeopardy} constitui a base das avaliações práticas e do sistema de gamificação, sendo o principal mecanismo de aferição técnica para o ranqueamento dos alunos entre as fases de especialização \cite{HackersDoBemManual}.
 
-Entretanto, a literatura aponta limitações críticas na aplicação universal deste modelo. \citeonline{Horcher2021} alerta que o formato tradicional de CTFs, frequentemente focado em velocidade, agressividade competitiva e cenários de "soma zero", reflete um viés cultural que pode alienar grupos sub-representados. A autora argumenta que mulheres tendem a apresentar melhor desempenho e retenção em ambientes que priorizam a colaboração e a resolução analítica de problemas, sugerindo que a ausência de adaptações no design das competições atua como uma barreira de entrada estrutural, e não como um filtro de competência.
+Entretanto, a literatura aponta limitações críticas na aplicação universal deste modelo. \citeonline{Horcher2021} alerta que o formato tradicional de \ac{CTFs}, frequentemente focado em velocidade, agressividade competitiva e cenários de "soma zero", reflete um viés cultural que pode afetar grupos sub-representados. A autora argumenta que mulheres tendem a apresentar melhor desempenho e retenção em ambientes que priorizam a colaboração e a resolução analítica de problemas, sugerindo que a ausência de adaptações no design das competições atua como uma barreira de entrada estrutural, e não como um filtro de competência.
 
 \subsection{Impacto do Ranqueamento na Inclusão}
 \label{ss_impacto_ranqueamento_inclusao}
@@ -96,7 +98,6 @@ Corroborando esta visão, \citeonline{Horcher2021} argumenta que as mecânicas t
 
 No contexto do Programa \textit{Hackers} do Bem, onde o ranqueamento é um critério eliminatório para o acesso às vagas da Residência Tecnológica \cite{HackersDoBemManual}, a análise destes fatores torna-se crítica para compreender se o modelo de avaliação está medindo apenas a competência técnica ou se está, inadvertidamente, filtrando candidatos com base em seu perfil de competitividade.
 
-% ----------------------------------------------------------------------- %
 \section{O Programa \textit{Hackers} do Bem}
 \label{s_programa_hackers_bem}
 
@@ -112,7 +113,7 @@ Conforme detalhado no Manual de Aprovação e Gamificação \cite{HackersDoBemMa
 \begin{enumerate}
     \item \textbf{Nivelamento (80h):} Etapa de entrada, aberta ao público geral e realizada de forma assíncrona. O currículo abrange fundamentos de \textit{hardware}, sistemas operacionais (\textit{Windows} e \textit{Linux}), redes de computadores (TCP/IP), lógica de programação e desenvolvimento de \textit{scripts}. O objetivo é uniformizar o conhecimento técnico dos candidatos antes das fases específicas de segurança.
     
-    \item \textbf{Básico (64h):} Também na modalidade assíncrona, esta fase introduz conceitos centrais de cibersegurança, incluindo identificação de ameaças, \textit{malwares}, criptografia, e fundamentos de \ac{GRC}. A aprovação nesta etapa é pré-requisito para o ranqueamento às fases subsequentes.
+    \item \textbf{Básico (64h):} Também na modalidade assíncrona, esta fase introduz conceitos centrais de cibersegurança, incluindo identificação de ameaças, \textit{malwares}, criptografia, e fundamentos de \ac{GRC}. A aprovação nesta etapa é pré-requisito para o ranqueamento nas fases subsequentes.
     
     \item \textbf{Fundamental (96h):} A partir deste nível, o programa adota um formato híbrido com aulas ao vivo e laboratórios práticos. O conteúdo aprofunda-se em arquitetura segura, autenticação, segurança em nuvem e resposta a incidentes. O acesso é limitado a um número específico de vagas, preenchidas via ranqueamento baseado no desempenho das fases anteriores.
     
@@ -122,7 +123,7 @@ Conforme detalhado no Manual de Aprovação e Gamificação \cite{HackersDoBemMa
         \item \textit{Blue Team} (Defesa e Monitoramento);
         \item Resposta a Incidentes e Forense Computacional;
         \item \textit{DevSecOps} (Desenvolvimento Seguro);
-        \item \ac{GRC}.
+        \item \acl{GRC}.
     \end{itemize}
     
     \item \textbf{Residência Tecnológica (6 meses):} A fase final consiste em uma imersão prática intensiva, onde os alunos atuam em projetos reais ou simulados, visando a transição direta para o mercado de trabalho.
@@ -133,14 +134,14 @@ O modelo de progressão entre estas fases não é automático. O programa utiliz
 \subsection{Modelo de Gamificação e Critérios de Aprovação}
 \label{ss_modelo_gamificacao_criterios_aprovacao}
 
-O avanço entre os níveis do programa não é automático, sendo regido por um sistema complexo de gamificação e ranqueamento. Conforme o Manual de Aprovação \cite{HackersDoBemManual}, os alunos acumulam \acf{XP} através do consumo de conteúdo, realização de \textit{quizzes} e atividades práticas. A classificação para as fases subsequentes, especialmente para a Residência, depende estritamente da posição do aluno no ranking geral, calculado pela soma de \ac{XP} e critérios de desempate baseados no desempenho em avaliações práticas. 
+O avanço entre os níveis do programa não é automático, sendo regido por um sistema de gamificação e ranqueamento. Conforme o Manual \cite{HackersDoBemManual}, os alunos acumulam \acf{XP} através do consumo de conteúdo, realização de \textit{quizzes} e atividades práticas. A classificação para as fases subsequentes, especialmente para a Residência, depende estritamente da posição do aluno no ranking geral, calculado pela soma de \ac{XP} e critérios de desempate baseados no desempenho em avaliações práticas. 
 
 Este mecanismo de "funil competitivo" é o ponto focal da análise de dados que será apresentada nos capítulos seguintes. A arquitetura de gamificação do programa foi desenhada para operar em duas camadas distintas: a progressão visual (Emblemas e Selos) e a progressão funcional (Ranqueamento).
 
 \subsubsection{Mecânica de Pontuação e Emblemas}
 \label{sss_mecanica_pontuacao_emblemas}
 
-A unidade fundamental de progresso no sistema é o \ac{XP}. Cada interação do aluno com a plataforma, seja a visualização de uma videoaula até a conclusão de um laboratório prático, atribui uma quantidade predeterminada de pontos. O acúmulo destes pontos desbloqueia emblemas de nível ("Meu Nível"), que servem como indicadores visuais de proficiência, conforme detalhado na \autoref{tab:emblemas_xp} \cite{HackersDoBemManual}.
+A unidade fundamental de progresso no sistema é o \ac{XP}. Cada interação do aluno com a plataforma, seja a visualização de uma videoaula até a conclusão de um laboratório prático, atribui uma quantidade predeterminada de pontos. O acúmulo destes pontos desbloqueia emblemas de nível, que servem como indicadores visuais de proficiência, conforme detalhado na \autoref{tab:emblemas_xp} \cite{HackersDoBemManual}.
 
 \begin{table}[htb]
 \centering
@@ -148,7 +149,7 @@ A unidade fundamental de progresso no sistema é o \ac{XP}. Cada interação do 
 \label{tab:emblemas_xp}
 \begin{tabular}{l|l|l}
 \hline
-\textbf{Nível do Emblema} & \textbf{XP Necessário} & \textbf{Estágio Associado} \\ \hline
+\textbf{Nível do Emblema} & \textbf{\ac{XP} Necessário} & \textbf{Estágio Associado} \\ \hline
 Aspirante a Hacker & 251 pontos & Conclusão do Nivelamento \\ \hline
 Explorador de Códigos & 603 pontos & Início do Básico \\ \hline
 Mestre de Segurança & 2.413 pontos & Conclusão do Fundamental \\ \hline
@@ -165,20 +166,20 @@ Hacker Lendário & A definir & Residência Tecnológica \\ \hline
 
 Enquanto os cursos de Nivelamento e Básico operam em modelo assíncrono com vagas ilimitadas, a transição para o nível Fundamental marca o início do gargalo estrutural do programa. O acesso às aulas síncronas e laboratórios avançados é restrito a um número limitado de vagas (definido por "ondas" de oferta), exigindo a aplicação de um algoritmo de seleção.
 
-O ranqueamento utiliza a pontuação acumulada como critério primário. Em cenários de empate, o manual estabelece uma hierarquia rigorosa de critérios de desempate para a seleção dos candidatos, priorizando a competência técnica sobre o mero consumo de conteúdo:
+O ranqueamento utiliza a pontuação acumulada como critério primário. Em cenários de empate, o manual estabelece uma hierarquia rigorosa de critérios de desempate para a seleção dos candidatos, priorizando a competência técnica sobre o consumo de conteúdo:
 
 \begin{enumerate}
     \item Maior nota nas Atividades Práticas (laboratórios);
     \item Maior nota na Avaliação Final (prova teórica);
     \item Maior nota nos \textit{Quizzes} de fixação;
-    \item Maior pontuação no consumo de conteúdo (XP de engajamento).
+    \item Maior pontuação no consumo de conteúdo (\ac{XP} de engajamento).
 \end{enumerate}
 
 Por fim, o modelo de avaliação cria um ambiente onde o "erro" na avaliação prática penaliza o aluno no ranking final, impactando diretamente suas chances de acesso à Residência Tecnológica. A seleção ocorre em três chamadas (listas classificatórias), onde as vagas não preenchidas na primeira lista são redistribuídas para os candidatos subsequentes no ranking \cite{HackersDoBemManual}. Um resumo do fluxo de avaliação pode ser verificado na \autoref{fig:fluxo_progresso}.
 
 \begin{figure}[htb]
     \centering
-    \caption{Fluxo de avaliação}
+    \caption{Fluxo de avaliação do programa}
     \label{fig:fluxo_progresso}
     \includegraphics[width=0.8\textwidth]{figs/fluxo_progresso.png}
     \fonte{Elaborada pela autora}
