@@ -4,14 +4,67 @@
 \chapter{Trabalhos Relacionados}
 \label{c_cap3}
 
-Neste capítulo são apresentados os trabalhos relacionados que forneceram a base teórica para o desenvolvimento desta pesquisa. O objetivo é identificar o estado da arte atual, sobre programas de capacitação em cibersegurança voltados para o público feminino, bem como as estratégias de retenção e engajamento utilizadas. A partir desta análise, busca-se evidenciar as lacunas que este trabalho pretende preencher ao investigar o cenário do programa Hackers do Bem. O restante do capítulo descreve a metodologia utilizada para a seleção das obras e discute os principais achados.
+Neste capítulo são apresentados os trabalhos relacionados que forneceram a base teórica para o desenvolvimento desta pesquisa. O objetivo foi identificar o estado da arte atual, sobre programas de capacitação em cibersegurança voltados para o público feminino, bem como as estratégias de retenção e engajamento utilizadas. A partir desta análise, busca-se evidenciar as lacunas que este trabalho pretende preencher ao investigar o cenário do programa Hackers do Bem. O restante do capítulo descreve a metodologia utilizada para a seleção das obras e discute os principais achados.
 
 \section{Metodologia}
 \label{s_metodologia}
 
-Para a condução deste estudo, adotou-se uma abordagem metodológica baseada em uma Revisão Sistemática da Literatura (RSL). O processo de seleção e análise dos trabalhos seguiu as diretrizes do método PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses), a fim de garantir a transparência, a qualidade e a replicabilidade da pesquisa bibliográfica.
+Para a condução deste estudo, adotou-se uma abordagem metodológica baseada em uma \ac{RSL}. O processo de seleção e análise dos trabalhos seguiu as diretrizes do método \ac{PRISMA}, a fim de garantir a transparência, a qualidade e a replicabilidade da pesquisa bibliográfica.
 
-As etapas estabelecidas para a revisão incluíram a definição do protocolo de busca, a identificação das fontes de informação, a aplicação de critérios de inclusão e exclusão, e a seleção dos estudos relevantes. Visando a extração de dados qualitativos e quantitativos, bem como, sorver de literatura para a fundamentação teórica.
+As etapas estabelecidas para a revisão incluíram a definição do protocolo de busca, a identificação das fontes de informação, a aplicação de critérios de inclusão e exclusão em uma primeira etapa olhando apenas para o título dos trabalhos. Na segunda etapa, foi realizada a leitura do resumo dos artigos, onde foram observados a interseção e rigor metodológico desses trabalhos com as questões de pesquisa que este trabalho busca responder. O objetivo da revisão foi viabilizar a extração de dados qualitativos e quantitativos, bem como, sorver de literatura para a fundamentação teórica.
+
+\subsection{Pesquisa bibliográfica}
+\label{s_s_pesquisa_bibliografica}
+
+Esta etapa consistiu no mapeamento do estado da arte sobre iniciativas de treinamento em cibersegurança e a inclusão de mulheres no setor tecnológico. Para a recuperação dos trabalhos, foram consultadas quatro bases de dados:
+\begin{itemize}
+    \item \hyperlink{https://ieeexplore.ieee.org/Xplore/home.jsp}{IEEE Xplore}
+    \item \hyperlink{https://www.elsevier.com/pt-br/products/scopus/search}{Scopus} 
+    \item \hyperlink{https://scholar.google.com/}{Google Scholar}
+    \item \hyperlink{https://dl.acm.org/}{ACM}
+\end{itemize}
+
+A estratégia de busca foi construída com base no \ac{PICO}. Os termos foram definidos para abranger conceitos de gênero, segurança da informação e ações de capacitação, conforme descritos na \autoref{tab:estrategia_pico}:
+
+\begin{table}[htb]
+\centering
+\IBGEtab{%
+  \caption{Estratégia PICO utilizada na revisão sistemática}
+  \label{tab:estrategia_pico}
+}{%
+  \begin{tabular}{l|p{10cm}}
+  \toprule
+  \textbf{Elemento} & \textbf{Definição na Pesquisa} \\
+  \midrule
+  \textbf{População} & Meninas, mulheres, estudantes e profissionais em cibersegurança. \\
+  \midrule
+  \textbf{Intervenção} & Projetos, programas, ações de inclusão, capacitação, mentoria, oficinas, eventos e \textit{hackathons}. \\
+  \midrule
+  \textbf{Comparação} & Projetos em cibersegurança (gerais/com recorte de gênero). \\
+  \midrule
+  \textbf{Resultado (\textit{Outcome})} & Aumento do número de ações voltadas às mulheres na área de cibersegurança. \\
+  \bottomrule
+  \end{tabular}%
+}{%
+  \fonte{Elaborada pela autora.}
+}
+\end{table}
+
+Considerando os três termos gerais usados na estratégia \ac{PICO}, foram construídas três conjuntos de palavras:
+
+\begin{itemize}
+    \item \textit{("women" OR "girls" OR "female" OR "gender")}
+    \item \textit{("cybersecurity" OR "digital security" OR "information security" OR "cyber security")}
+    \item \textit{("inclusion" OR "outreach" OR "mentor" OR "train" OR "empower" OR "project" OR "hackathon" OR "workshop" OR "boot camp")}
+\end{itemize}
+
+Resultando por fim em uma string de busca maior, formada pela união desses três grupos de palavras:
+
+\textit{("women" OR "girls" OR "female" OR "gender") AND ("cybersecurity" OR "digital security" OR "information security" OR "cyber security") AND ("inclusion" OR "outreach" OR "mentor" OR "train" OR "empower" OR "project" OR "hackathon" OR "workshop" OR "boot camp")}
+
+Para o refinamento dos resultados, além da string de busca, foram incluídos outros filtros nos motores de busca. O levantamento deveria retornar apenas livros, artigos completos publicados em periódicos ou eventos, entre o período de 2020 a 2025. Após a execução nas bases de dados, todos os metadados dos artigos foram exportados para a ferramenta \hyperlink{https://www.rayyan.ai/}{Rayyan}, que foi utilizada para decidir quais artigos deveriam ser incluídos na segunda etapa do refinamento, incluir critérios de aceito e exclusão, bem como busca de referências duplicadas e referências incompletas.
+
+Na primeira etapa da revisão, 661 artigos foram encontrados, sendo 342 na IEEE Xplore, 50 no Google Scholar, 54 na Scopus e 215 na ACM.
 
 \begin{table}[htb]
 \centering
@@ -20,40 +73,117 @@ As etapas estabelecidas para a revisão incluíram a definição do protocolo de
   \caption{Processo de seleção dos artigos}
   \label{tab:selecao_artigos}
 }{%
-  \begin{tabular}{l|c|c|c}
+  \begin{tabular}{l|c|c|c|c}
   \toprule
-  \textbf{Base de dados} & \textbf{1ª seleção} & \textbf{2ª seleção} & \textbf{Seleção final} \\
+  \textbf{Base de dados} & \textbf{1ª seleção} & \textbf{2ª seleção} & \textbf{3ª seleção} & \textbf{Seleção final} \\
   \midrule
-Google Scholar & 50  & 29 & XX \\
-Scopus         & 54  & 24 & XX \\
-IEEE Xplore    & 342 & 32 & XX \\
+Google Scholar & 50  & 29 & 6  & 1 \\
+Scopus         & 54  & 23 & 5  & 1 \\
+IEEE Xplore    & 342 & 32 & 11 & 2 \\
+ACM            & 215 & 30 & 10 & 4 \\
   \midrule
-  \textbf{Total} & \textbf{446} & \textbf{85} & \textbf{85} \\
+  \textbf{Total} & \textbf{651} & \textbf{114} & \textbf{32} & \textbf{8} \\
   \bottomrule
   \end{tabular}%
 }{%
-  \fonte{Elaborada pela autora.}
+  \fonte{Elaborada pela autora}
 }
 \end{table}
 
+\section{Comparação dos trabalhos selecionados}
+\label{s_comparacao_trabalhos_selecionados}
+
+Este capítulo apresenta a análise dos trabalhos selecionados através da \ac{RSL}, com o objetivo de identificar o estado da arte referente às estratégias de mitigação do gap de gênero em cibersegurança e o impacto de metodologias ativas, como a gamificação, em programas de capacitação em larga escala.
+
+A seleção final resultou em 8 artigos que abordam diretamente as questões de pesquisa (QP) deste trabalho. A análise a seguir está estruturada para demonstrar como a literatura atual trata o tripé: Gênero, Gamificação e Escalabilidade, e como a presente dissertação se posiciona frente às lacunas identificadas.
+
+\subsection{Panorama da Seleção Final}
+\label{s_c3_panorama}
+
+Para avaliar a atualidade e a relevância dos estudos selecionados, foi realizada uma análise temporal das publicações. A \autoref{fig:timeline} ilustra a distribuição dos trabalhos por ano de publicação. É possível observar uma concentração expressiva de trabalhos no ano de 2025, indicando que a discussão sobre a intersecção entre inclusão de gênero e metodologias de ensino em cibersegurança é um tema emergente e de alta relevância no cenário acadêmico atual.
+
+\begin{figure}[htb]
+    \centering
+    \caption{Distribuição temporal dos trabalhos selecionados}
+    \label{fig:timeline}
+    \includegraphics[width=0.8\textwidth]{figs/distribuicao-temporal.png}
+    \fonte{Elaborada pela autora.}
+\end{figure}
+
+Diferente de revisões que abrangem décadas, a seleção final demonstra que a discussão sobre escala e intervenções específicas de gênero atingiu seu ápice de publicação recentemente. Isso valida a justificativa desta pesquisa, pois o programa Hackers do Bem opera neste contexto temporal e tecnológico.
 
 % ----------------------------------------------------------------------- %
-% ----------------------------------------------------------------------- %
-\section{Trabalho 1 (2015)}
-\label{s_c3_trabalho-1}
+\subsection{Análise Multidimensional dos Trabalhos}
+\label{s_c3_analise_multi}
 
-% ----------------------------------------------------------------------- %
-% ----------------------------------------------------------------------- %
-\section{Trabalho 2 (2017)}
-\label{s_c3_trabalho-2}
+A fim de compreender as contribuições individuais e as limitações de cada estudo em relação ao objeto desta dissertação, os trabalhos foram avaliados sob cinco dimensões críticas, derivadas das questões de pesquisa:
 
+\begin{enumerate}
+    \item \textbf{Foco em Gênero (QP1):} Profundidade da análise sobre barreiras para mulheres.
+    \item \textbf{Gamificação/CTF (QP3):} Abordagem de jogos e competições (Capture The Flag).
+    \item \textbf{Escalabilidade (QP2):} Aplicabilidade em programas de massa.
+    \item \textbf{Empirismo:} Presença de dados reais versus revisões teóricas.
+    \item \textbf{Soft Skills (QP4):} Inclusão de competências não-técnicas como estratégia de retenção.
+\end{enumerate}
 
-% ----------------------------------------------------------------------- %
-% ----------------------------------------------------------------------- %
-\section{Comparação dos Trabalhos Relacionados}
+A \autoref{fig:radar} apresenta o gráfico de radar resultante desta avaliação, permitindo a visualização dos \textit{clusters} temáticos e das lacunas existentes na literatura.
+
+\begin{figure}[htb]
+    \centering
+    \caption{Comparativo multidimensional dos trabalhos selecionados}
+    \label{fig:radar}
+    \includegraphics[width=0.8\textwidth]{figs/analise-multidimensional.png}
+    \fonte{Elaborada pela autora}
+\end{figure}
+
+Observando a \autoref{fig:radar}, nota-se a formação de três grupos distintos de trabalhos, detalhados nas seções a seguir.
+
+\subsection{Gamificação e Adaptação de CTFs}
+Enquanto o programa \textit{Hackers do Bem} utiliza gamificação massiva através de sistemas de XP e ranqueamento, a literatura aponta ressalvas críticas sobre a aplicação genérica destes métodos. \citeonline{Coenraad2020} fornecem a base teórica de que jogos digitais são eficazes para o engajamento geral, mas \citeonline{Horcher2021} introduz um contraponto essencial para a \textbf{QP3}: competições tradicionais de CTF podem alienar grupos sub-representados se não forem adaptadas.
+
+Corroborando esta visão, \citeonline{Costa2025} demonstram empiricamente, através de intervenções práticas, que a adaptação da narrativa do jogo e o ambiente colaborativo aumentam significativamente a autoeficácia feminina. Este resultado sugere que a gamificação, sem um design inclusivo, pode atuar como barreira e não como incentivo, hipótese que será verificada nos dados de evasão do \textit{Hackers do Bem}.
+
+\subsection{Escala e Programas de Capacitação}
+A escalabilidade é o desafio central abordado na QP2 desta pesquisa. Os trabalhos de \citeonline{Musuva2025} e \citeonline{Tshekiso2025} destacam-se no gráfico de radar (eixo verde) por atingirem a pontuação máxima em escalabilidade. Ambos descrevem iniciativas na África, como o programa \textit{Cyber Shujaa}, que enfrentam barreiras similares de infraestrutura e acesso às encontradas no Brasil.
+
+A análise destes trabalhos oferece um \textit{benchmark} importante: ambos sugerem que a mentoria híbrida e o suporte comunitário são vitais para evitar a evasão em massa em programas de grande porte. No entanto, estes estudos possuem menor foco na análise específica das mecânicas de gamificação (eixo azul do gráfico), lacuna que esta dissertação pretende preencher ao analisar os dados do \textit{Hackers do Bem}.
+
+\subsection{Gênero, Soft Skills e Barreiras de Entrada}
+Para a formulação das diretrizes (\textbf{QP4}), \citeonline{Benson2025} e \citeonline{Pacheco2024} oferecem a fundamentação teórica necessária. \citeonline{Benson2025} argumenta que a valorização excessiva de \textit{hard skills} em detrimento de \textit{soft skills} cria uma barreira de entrada artificial para mulheres.
+
+Cruzando esta informação com a Revisão Sistemática realizada por \citeonline{SelmanHousein2025}, observa-se que programas de sucesso integram o desenvolvimento de competências comportamentais como parte do currículo técnico. A \autoref{fig:radar} evidencia que estes trabalhos (eixo vermelho/laranja) são fortes na discussão de gênero, mas carecem de validação em ambientes de larga escala, limitando-se muitas vezes a estudos de caso em universidades ou revisões teóricas.
+
+\section{Comparação e Lacunas Identificadas}
 \label{s_c3_comparacao}
 
-% ----------------------------------------------------------------------- %
-% ----------------------------------------------------------------------- %
+A \autoref{tab:comparacao_trabalhos} sintetiza a comparação entre os trabalhos selecionados e a proposta desta dissertação. É possível verificar que, embora existam estudos sobre gamificação inclusiva e estudos sobre programas de larga escala, há uma ausência de trabalhos que integrem ambas as dimensões sob a ótica de gênero.
+
+\begin{quadro}[!htbp]
+\centering
+\caption{Comparação dos trabalhos relacionados com a proposta atual}
+\label{tab:comparacao_trabalhos}
+\begin{footnotesize}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Trabalho} & \textbf{Foco Principal} & \textbf{Escala} & \textbf{Gamificação} & \textbf{Gênero} & \textbf{Limitação Principal} \\ \hline
+\citeonline{Coenraad2020} & Jogos em Cyber & Baixa & Alta & Baixa & Foco técnico, pouca análise de inclusão. \\ \hline
+\citeonline{Horcher2021} & CTF Inclusivo & Baixa & Alta & Alta & Estudo em ambiente controlado/pequeno. \\ \hline
+\citeonline{Musuva2025} & Capacitação (África) & Alta & Baixa & Média & Foco em empregabilidade geral, não em gênero. \\ \hline
+\citeonline{Costa2025} & Gap de Gênero & Média & Alta & Alta & Intervenção específica, não longitudinal. \\ \hline
+\citeonline{Benson2025} & Soft Skills & Baixa & Baixa & Alta & Estudo qualitativo/teórico. \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Esta Dissertação} & \textbf{Diagnóstico e Diretrizes} & \textbf{Alta} & \textbf{Alta} & \textbf{Alta} & \textbf{Foco específico no Programa Hackers do Bem.} \\ \hline
+\end{tabular}%
+}
+\end{footnotesize}
+\fonte{Elaborado pela autora.}
+\end{quadro}
+
 \section{Considerações}
 \label{s_c3_consideracoes}
+
+A análise dos trabalhos relacionados permite concluir que a decomposição do problema em fatores isolados (apenas gamificação ou apenas políticas de gênero) é insuficiente para abordar a complexidade da evasão feminina em programas massivos. O \textit{Hackers do Bem}, ao combinar ensino em larga escala com um sistema agressivo de ranqueamento gamificado, apresenta um cenário único que não foi completamente explorado pela literatura vigente.
+
+Desta forma, esta pesquisa se diferencia ao correlacionar dados reais de participação e desempenho em larga escala com as mecânicas de jogo, visando propor diretrizes que unam a escalabilidade técnica (\citeonline{Tshekiso2025}) com a sensibilidade de inclusão (\citeonline{Horcher2021}, \citeonline{Benson2025}).

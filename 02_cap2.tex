@@ -5,3 +5,122 @@
 % ----------------------------------------------------------------------- %
 \chapter{Fundamentação Teórica}
 \label{c_cap2}
+
+Este capítulo apresenta os conceitos fundamentais necessários para a compreensão do problema de pesquisa e da análise realizada. A fundamentação está dividida em quatro eixos principais: (i) o cenário global e nacional da força de trabalho em cibersegurança; (ii) as disparidades de gênero e barreiras na área tecnológica; (iii) as metodologias de ensino, com foco em gamificação e competições; e (iv) a caracterização detalhada do objeto de estudo, o Programa Hackers do Bem.
+
+% ----------------------------------------------------------------------- %
+\section{Cenário da Força de Trabalho em Cibersegurança}
+\label{s_c2_cenario}
+
+A escassez de profissionais qualificados em segurança da informação é um desafio global que impacta diretamente a capacidade de defesa de organizações e nações. Nesta seção, discute-se a evolução do déficit de talentos (\textit{workforce gap}) e as políticas públicas recentes para mitigação.
+
+\subsection{O Déficit Global e Nacional de Talentos}
+\label{ss_c2_deficit}
+% O QUE ESCREVER AQUI:
+% - Apresentar os dados do ISC2 e WEF sobre a falta de profissionais (Gap de 4 milhões global, etc.).
+% - Discutir que não é apenas falta de gente, mas falta de qualificação específica.
+% CITAR: Relatórios ISC2, WEF e artigos como Musuva (2025) que falam de workforce gap.
+
+A lacuna na força de trabalho de cibersegurança atingiu níveis críticos. Segundo dados recentes \cite{ISC2_2024}, o déficit global ultrapassa milhões de profissionais, com o Brasil figurando como um dos países com maior carência de mão de obra especializada.
+
+\subsection{Políticas Públicas e a Estratégia Nacional (E-Ciber)}
+\label{ss_c2_politicas}
+% O QUE ESCREVER AQUI:
+% - Contextualizar que o "Hackers do Bem" não surgiu do nada. Ele responde a uma demanda legal.
+% - Citar o Decreto 12.573/2025 e a E-Ciber.
+% CITAR: Decreto 12.573 [3], E-Ciber.
+
+No contexto brasileiro, a resposta governamental materializou-se através da Estratégia Nacional de Cibersegurança (E-Ciber) e do Decreto nº 12.573/2025 \cite{Decreto12573}, que estabelecem a educação e a capacitação massiva como pilares para a soberania digital. É neste cenário que se inserem iniciativas de larga escala financiadas pelo MCTI.
+
+% ----------------------------------------------------------------------- %
+\section{Desigualdade de Gênero na Cibersegurança}
+\label{s_c2_genero}
+
+A sub-representação feminina na cibersegurança não é apenas uma questão de diversidade, mas de eficiência econômica e inovação. Esta seção explora as barreiras estruturais e culturais que impedem a entrada e a permanência de mulheres na área.
+
+\subsection{Panorama da Representatividade Feminina}
+\label{ss_c2_panorama_fem}
+% O QUE ESCREVER AQUI:
+% - Dados estatísticos: Mulheres são ~25% da força de trabalho (dados ISC2).
+% - Comparar com outras áreas de TI.
+% CITAR: Pacheco (2024), Selman-Housein (2025).
+
+Apesar dos avanços na última década, as mulheres ainda representam uma parcela minoritária da força de trabalho em cibersegurança. Estudos como o de \citeonline{Pacheco2024} indicam que a participação feminina estagnou em torno de 25\%, com disparidades ainda maiores em cargos de liderança técnica.
+
+\subsection{Barreiras de Entrada e o Fenômeno do \textit{Leaky Pipeline}}
+\label{ss_c2_barreiras}
+% O QUE ESCREVER AQUI:
+% - Explicar o conceito de "Leaky Pipeline" (Vazamento de talentos): elas entram no curso mas desistem.
+% - Estereótipos ("Hacker de capuz"), cultura "Bro-grammer", falta de mentoria.
+% CITAR: Selman-Housein (2025), Costa (2025).
+
+O conceito de \textit{Leaky Pipeline} (vazamento de talentos) descreve a perda progressiva de participação feminina ao longo da jornada educacional e profissional. \citeonline{SelmanHousein2025} identificam que a falta de modelos de referência (\textit{role models}), a percepção de um ambiente hostil e a ausência de mentorias estruturadas são fatores determinantes para a evasão precoce em programas de formação.
+
+\subsection{A Importância das \textit{Soft Skills} na Retenção}
+\label{ss_c2_softskills}
+% O QUE ESCREVER AQUI:
+% - Discutir que Cyber não é só escovar bit. Mulheres tendem a valorizar comunicação, gestão e análise.
+% - Se o curso foca só em técnica, ele afasta esse perfil.
+% CITAR: Benson (2025).
+
+A valorização excessiva de competências puramente técnicas (\textit{hard skills}) em detrimento de habilidades comportamentais e analíticas (\textit{soft skills}) atua como uma barreira de entrada artificial. \citeonline{Benson2025} argumentam que a reformulação dos currículos para integrar competências como comunicação, gestão de crise e análise forense é uma estratégia eficaz para aumentar a atratividade da área para o público feminino.
+
+% ----------------------------------------------------------------------- %
+\section{Metodologias de Ensino e Gamificação}
+\label{s_c2_metodologias}
+
+Para escalar o ensino de cibersegurança, programas modernos recorrem a metodologias ativas e gamificação. Esta seção define os conceitos que sustentam a arquitetura pedagógica do programa analisado.
+
+\subsection{Gamificação e Aprendizagem Baseada em Jogos (GBL)}
+\label{ss_c2_gamificacao}
+% O QUE ESCREVER AQUI:
+% - Definir Gamificação (uso de elementos de jogos) vs Jogos Sérios.
+% - Explicar PBL (Points, Badges, Leaderboards).
+% CITAR: Coenraad (2020) para o estado da arte de jogos em cyber.
+
+A gamificação consiste na aplicação de elementos de design de jogos em contextos não lúdicos para aumentar o engajamento e a motivação. Em sua revisão sistemática, \citeonline{Coenraad2020} demonstram que o uso de pontuações, emblemas e narrativas imersivas em cibersegurança facilita a abstração de conceitos técnicos complexos e promove a aprendizagem ativa.
+
+\subsection{\textit{Capture The Flag} (CTF) e Competições}
+\label{ss_c2_ctf}
+% O QUE ESCREVER AQUI:
+% - Explicar o que é um CTF (Jeopardy vs Attack-Defense).
+% - É a base das avaliações práticas do HdB.
+% CITAR: Horcher (2021).
+
+As competições do tipo \textit{Capture The Flag} (CTF) são o padrão \textit{de facto} para treinamento prático em segurança ofensiva e defensiva. No entanto, \citeonline{Horcher2021} alerta que o formato tradicional de CTFs, focado em velocidade e competitividade agressiva, pode alienar grupos sub-representados, sugerindo a necessidade de adaptações para formatos colaborativos.
+
+\subsection{Impacto do Ranqueamento na Inclusão}
+\label{ss_c2_ranking_genero}
+% O QUE ESCREVER AQUI:
+% - Discutir se Ranking ajuda ou atrapalha mulheres.
+% - Teoria da Autoeficácia.
+% CITAR: Costa (2025) e Horcher (2021).
+
+A utilização de rankings públicos (\textit{leaderboards}) é controversa na literatura de educação inclusiva. Enquanto promovem a competitividade, podem reduzir a autoeficácia de participantes que não se veem representados no topo da lista. \citeonline{Costa2025} demonstram que ambientes de aprendizado que priorizam a colaboração sobre a competição direta apresentam melhores taxas de retenção feminina.
+
+% ----------------------------------------------------------------------- %
+\section{O Programa Hackers do Bem}
+\label{s_c2_hackers_do_bem}
+
+O Programa Hackers do Bem, instituído pelo Ministério da Ciência, Tecnologia e Inovação (MCTI) e executado pela RNP em parceria com o Senai e a Softex, constitui o objeto de estudo central desta dissertação.
+
+\subsection{Objetivos e Estrutura da Formação}
+\label{ss_c2_hdb_estrutura}
+% O QUE ESCREVER AQUI:
+% - Descrever a meta (30k alunos).
+% - Descrever as trilhas: Nivelamento, Básico, Fundamental, Especializado, Residência.
+% CITAR: Manual do programa [4], Notícia MCTI [5].
+
+O programa tem como meta a formação de mais de 30 mil profissionais em cibersegurança \cite{MCTI2025}. A estrutura curricular é dividida em cinco níveis progressivos: Nivelamento, Básico, Fundamental, Especializado e Residência Tecnológica, combinando ensino assíncrono em escala com atividades síncronas e práticas laboratoriais \cite{HackersDoBemManual}.
+
+\subsection{Modelo de Gamificação e Critérios de Aprovação}
+\label{ss_c2_hdb_gamificacao}
+% O QUE ESCREVER AQUI:
+% - Detalhar tecnicamente como funciona o avanço.
+% - Pontos de Experiência (XP), Emblemas ("Meu Nível"), Quizzes.
+% - Explicar o "funil" de ranqueamento entre as fases.
+% CITAR: Manual de Aprovação e Gamificação [4].
+
+O avanço entre os níveis do programa não é automático, sendo regido por um sistema complexo de gamificação e ranqueamento. Conforme o Manual de Aprovação \cite{HackersDoBemManual}, os alunos acumulam Pontos de Experiência (XP) através do consumo de conteúdo, realização de quizzes e atividades práticas.
+
+A classificação para as fases subsequentes, especialmente para a Residência, depende estritamente da posição do aluno no ranking geral, calculado pela soma de XP e critérios de desempate baseados no desempenho em avaliações práticas. Este mecanismo de "funil competitivo" é o ponto focal da análise de dados que será apresentada nos capítulos seguintes.
