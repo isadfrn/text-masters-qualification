@@ -1,54 +1,99 @@
-% ----------------------------------------------------------------------- %
-% Arquivo: introducao.tex
-% ----------------------------------------------------------------------- %
-
-
-% ----------------------------------------------------------------------- %
 \chapter{Introdução}
 \label{c_introducao}
 
-% ----------------------------------------------------------------------- %
+A segurança cibernética consolidou-se como um pilar estratégico para a soberania nacional e a estabilidade econômica global. No entanto, o setor enfrenta um déficit crítico de profissionais qualificados, fenômeno globalmente conhecido como \textit{Cybersecurity Skills Gap}. Relatórios recentes indicam que a força de trabalho atual precisa crescer significativamente para atender à demanda de proteção de dados e infraestruturas críticas \cite{ISC2_2024}.
+
+No Brasil, como resposta a este desafio, foi instituído o Programa \textit{Hackers do Bem}, uma iniciativa financiada pelo Ministério da Ciência, Tecnologia e Inovação (MCTI) e executada pela Rede Nacional de Ensino e Pesquisa (RNP), em parceria com o Senai e a Softex. O programa visa capacitar mais de 30 mil profissionais através de um modelo de ensino massivo, gamificado e escalável \cite{HackersDoBemManual}.
+
+Paralelamente à escassez geral, observa-se uma disparidade de gênero acentuada no setor. Mulheres permanecem sub-representadas, enfrentando barreiras culturais e estruturais que dificultam não apenas o ingresso, mas, crucialmente, a permanência e a progressão na carreira técnica. A Estratégia Nacional de Cibersegurança e o recente Decreto nº 12.573/2025 reforçam a necessidade de fomentar linhas de pesquisa que estimulem a formação de recursos humanos e a diversidade no setor \cite{Decreto12573}.
+
+Neste contexto, esta dissertação investiga a eficácia das metodologias de ensino e retenção aplicadas em larga escala, especificamente sob a perspectiva de gênero, buscando compreender como mecanismos de gamificação e ranqueamento impactam a trajetória das estudantes no programa.
+
 \section{Problema de Pesquisa}
-\label{s_cintro_problema_pesquisa}
+\label{s_problema_pesquisa}
 
-% ----------------------------------------------------------------------- %
+Apesar dos esforços para aumentar o ingresso de mulheres em cursos de tecnologia, a literatura aponta para um fenômeno de "vazamento de talentos" (\textit{leaky pipeline}), onde as taxas de evasão feminina superam as masculinas à medida que o nível técnico e a competitividade aumentam.
+
+No Programa \textit{Hackers do Bem}, a progressão entre os níveis (Nivelamento, Básico, Fundamental, Especializado e Residência) é regida por critérios de desempenho baseados em pontos de experiência (XP), \textit{quizzes} e competições práticas do tipo \textit{Capture The Flag} (CTF), culminando em um ranqueamento classificatório \cite{HackersDoBemManual}.
+
+O problema de pesquisa reside na hipótese de que o \textit{design} instrucional e os mecanismos de gamificação competitiva, se não ajustados para a diversidade, podem atuar inadvertidamente como fatores de exclusão. Diante disso, define-se a seguinte Questão de Pesquisa Principal:
+
+\begin{quote}
+\textbf{QP:} Como programas de capacitação em larga escala, especificamente o \textit{Hackers do Bem}, podem ser otimizados para mitigar o \textit{gap} de gênero e aumentar a retenção de talentos femininos na força de trabalho de cibersegurança?
+\end{quote}
+
+Esta questão desdobra-se nas seguintes questões específicas:
+\begin{itemize}
+    \item \textbf{QP1:} Quais são as principais barreiras de entrada e estratégias de permanência para mulheres identificadas no estado da arte?
+    \item \textbf{QP2:} Qual é o perfil de participação e a taxa de evasão feminina ao longo das trilhas de formação do programa?
+    \item \textbf{QP3:} De que maneira elementos como a gamificação e o ranqueamento influenciam o engajamento e o desempenho das participantes do gênero feminino?
+    \item \textbf{QP4:} Que diretrizes estratégicas podem ser formuladas para adaptar o programa visando a equidade de gênero?
+\end{itemize}
+
 \subsection{Solução Proposta}
-\label{ss_cintro_solucao}
+\label{ss_solucao_proposta}
 
-% ----------------------------------------------------------------------- %
+A solução proposta nesta pesquisa é o desenvolvimento de um \textbf{Framework de Diretrizes de Inclusão e Retenção}, fundamentado em evidências empíricas. A construção deste artefato baseia-se em uma abordagem de métodos mistos (\textit{mixed methods}), que combina:
+\begin{enumerate}
+    \item A mineração de dados educacionais dos participantes do \textit{Hackers do Bem}, correlacionando métricas de desempenho técnico e gamificação com as taxas de evasão por gênero.
+    \item A análise qualitativa da percepção das alunas, coletada através de instrumentos validados, para compreender os fatores subjetivos que motivam a desistência ou a permanência.
+\end{enumerate}
+
+O \textit{framework} visa fornecer recomendações práticas para ajustes no \textit{design} do programa, focando em neutralizar vieses nos critérios de avaliação e promover um ambiente de aprendizado que favoreça a autoeficácia feminina.
+
 \subsection{Delimitação de Escopo}
-\label{ss_cintro_escopo}
+\label{ss_delimitacao_escopo}
 
-% ----------------------------------------------------------------------- %
+O escopo da pesquisa limita-se à análise dos dados das turmas do Programa \textit{Hackers do Bem} realizadas entre 2024 e 2025. A análise quantitativa focará nas transições críticas do funil de formação (do Nivelamento à Residência Tecnológica). Serão considerados apenas dados anonimizados, respeitando a Lei Geral de Proteção de Dados (LGPD). Não faz parte do escopo a alteração do código-fonte da plataforma de ensino ou a intervenção direta nas turmas em andamento, caracterizando-se como um estudo observacional e propositivo.
+
 \subsection{Justificativa}
-\label{ss_cintro_justificativa}
+\label{ss_justificativa}
 
-% ----------------------------------------------------------------------- %
+A justificativa para este trabalho é tripla: social, acadêmica e estratégica.
+\begin{itemize}
+    \item \textbf{Social e Estratégica:} O Decreto nº 12.573, de 4 de agosto de 2025, estabelece como objetivo da Política Nacional de Cibersegurança o incentivo à criação de linhas de pesquisa e o estímulo à formação de recursos humanos \cite{Decreto12573}. Garantir que mulheres concluam essa formação é essencial para maximizar o retorno do investimento público realizado no programa.
+    \item \textbf{Acadêmica:} Revisões sistemáticas recentes, como a de \citeonline{SelmanHousein2025}, apontam a escassez de estudos que apresentem "métricas de impacto quantificáveis" sobre intervenções de gênero. Esta dissertação contribui para preencher essa lacuna ao analisar dados reais de um programa massivo.
+    \item \textbf{Técnica:} Estudos indicam que a diversidade em equipes de segurança aumenta a eficiência na resolução de problemas complexos \cite{Pacheco2024}. Mitigar a evasão feminina não é apenas uma questão de justiça social, mas um requisito para a eficácia da defesa cibernética nacional.
+\end{itemize}
+
 \section{Objetivos}
-\label{s_cintro_objetivos}
+\label{s_objetivos}
 
-
-% ----------------------------------------------------------------------- %
 \subsection{Objetivo Geral}
-\label{ss_cintro_objetivo_geral}
+\label{ss_objetivo_geral}
 
-% ----------------------------------------------------------------------- %
+Propor e validar um conjunto de diretrizes para o aumento da retenção feminina em programas de capacitação em cibersegurança, baseadas na análise de dados de engajamento e evasão do Programa \textit{Hackers do Bem}.
+
 \subsection{Objetivos Específicos}
-\label{ss_cintro_objetivos_espec}
+\label{ss_objetivos_especificos}
 
-% ----------------------------------------------------------------------- %
+\begin{itemize}
+    \item Mapear, através de Revisão Sistemática da Literatura (RSL), as estratégias de retenção e barreiras de gênero documentadas na computação.
+    \item Analisar quantitativamente o funil de aprovação do programa, identificando os pontos críticos de evasão feminina.
+    \item Avaliar a correlação entre os mecanismos de gamificação (XP, Ranking) e o desempenho das participantes.
+    \item Elaborar o \textit{Framework de Diretrizes} e validá-lo analiticamente através da comparação com \textit{benchmarks} da literatura.
+\end{itemize}
+
 \section{Metodologia}
-\label{s_cintro_metodologia}
+\label{s_metodologia}
 
-% ----------------------------------------------------------------------- %
 \subsection{Metodologia da Pesquisa}
-\label{ss_cintro_metod_pesquisa}
+\label{ss_metodologia_pesquisa}
 
-% ----------------------------------------------------------------------- %
+Esta pesquisa classifica-se como aplicada, de natureza exploratória e descritiva, utilizando uma abordagem de métodos mistos. A vertente quantitativa utiliza técnicas de \textit{Educational Data Mining} (EDM) para processar os logs da plataforma de ensino. A vertente qualitativa utiliza levantamentos de percepção (\textit{surveys}) fundamentados em escalas de autoeficácia e motivação \cite{Costa2025}.
+
 \subsection{Procedimentos Metodológicos}
-\label{ss_cintro_proced_metodologicos}
+\label{ss_procedimentos_metodologicos}
 
-% ----------------------------------------------------------------------- %
+Os procedimentos foram estruturados nas seguintes etapas:
+\begin{enumerate}
+    \item \textbf{Revisão Sistemática da Literatura (RSL):} Executada conforme o protocolo PICO (População, Intervenção, Comparação, Resultado), nas bases ACM, IEEE, Scopus e Google Scholar, para fundamentar as categorias de análise.
+    \item \textbf{Coleta e Tratamento de Dados:} Obtenção dos registros do programa junto à RNP e aplicação de questionários, após aprovação do Comitê de Ética em Pesquisa (CEP/Univali).
+    \item \textbf{Análise de Dados:} Processamento estatístico para cálculo de taxas de evasão e correlação de variáveis.
+    \item \textbf{Definição das Diretrizes:} Síntese dos achados em recomendações práticas para o programa.
+\end{enumerate}
+
 \section{Estrutura da Dissertação}
-\label{s_cintro_estrutura}
+\label{s_estrutura_dissertacao}
 
+A dissertação está organizada em capítulos que refletem o fluxo da pesquisa. O \textbf{Capítulo 2} apresenta a Fundamentação Teórica e os trabalhos relacionados mapeados na RSL. O \textbf{Capítulo 3} detalha o diagnóstico do Programa \textit{Hackers do Bem}, descrevendo sua estrutura e mecanismos de avaliação. O \textbf{Capítulo 4} apresenta a proposta de pesquisa, incluindo o detalhamento do método de análise de dados e o cronograma. Por fim, o \textbf{Capítulo 5} trará as considerações finais (na versão de qualificação) ou a discussão dos resultados e o \textit{framework} proposto (na versão final).

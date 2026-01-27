@@ -1,7 +1,3 @@
-%----------------%
-% antigo template-TESTES.tex
-%----------------%
-
 %% abtex2-modelo-trabalho-academico.tex, v-1.9 laurocesar
 %% Copyright 2012-2013 by abnTeX2 group at http://abntex2.googlecode.com/ 
 %%
@@ -78,6 +74,7 @@
 \usepackage{multirow}
 \usepackage{booktabs}
 \usepackage{pifont}
+\usepackage{tikz} \usetikzlibrary{shapes,arrows,positioning}
 % Utilizado para inserir arquivos PDF no documento
 \RequirePackage{pdflscape}
 \RequirePackage{pdfpages}
@@ -87,10 +84,6 @@
 %\usepackage{trivfloat}
 %\trivfloat{quadro}
 % Substituído comando acima por entradas no arquivo "abntex2.cls". Referência de comandos tiradas de: https://github.com/abntex/abntex2/wiki/HowToCriarNovoAmbienteListing
-
-
-
-
 
 % ---
 
@@ -117,7 +110,6 @@
 % Pacote para inserir TODO, para correção
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
 
-
 % ---
 % Pacotes de citações
 % ---
@@ -128,11 +120,8 @@
 % \usepackage[alf,myoptions]{styles/abntex2cite} % Citações padrão ABNT
 \usepackage[alf,abnt-etal-list=0,abnt-etal-cite=3,abnt-repeated-author-omit=yes,abnt-doi=expand,abnt-emphasize=bf]{styles/abntex2cite}	
 
-
-
 % Pacote de Formatação da Univali
 \usepackage{styles/univali_custom}
-
 
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
@@ -143,7 +132,7 @@
 \local{Itajaí (SC)}
 \mes{Janeiro}
 \ano{2026}
-\orientador{Michelle Silva Wangham, Dra.}
+\orientador{Michelle Silva Wangham, Dra}
 %\coorientador{Coorientador}
 \instituicao{UNIVERSIDADE DO VALE DO ITAJAÍ\par
 PRÓ-REITORIA DE PÓS-GRADUAÇÃO,\\ 
@@ -163,13 +152,12 @@ COMPUTAÇÃO APLICADA}
 \linhadepesquisa{Tecnologias Sociais e Educacionais}
 \researchline{Social and Educational Technologies}
 %\numpaginas{175}
-\palavraschave{educação em cibersegurança, gap de gênero, gamificação.}
-\keywords{cybersecurity education, gender gap, and gamification.}
+\palavraschave{educação em cibersegurança, gap de gênero, gamificação}
+\keywords{cybersecurity education, gender gap, and gamification}
 \englishmonth{January}
 \titleenglish{Strategies for Reducing the Gender Gap in Cybersecurity: Diagnosis and Guidelines based on the Analysis of the Hackers do Bem Program}
 %\subtitleenglish{A User-Centric Solution for e-Government}
 % ---
-
 
 % ---
 % Configurações de aparência do PDF final
@@ -205,7 +193,6 @@ COMPUTAÇÃO APLICADA}
 
 % Retira espaço extra obsoleto entre as frases.
 \frenchspacing 
-
 
 % ----------------------------------------------------------
 % ELEMENTOS PRÉ-TEXTUAIS
@@ -251,12 +238,11 @@ COMPUTAÇÃO APLICADA}
 \include{frontmatter/lista_figuras}
 \include{frontmatter/lista_tabelas}
 %\includepdf[pages=1,scale=1]{_template/lista_quadros.pdf}
-% \include{_template/lista_quadros}
+\include{_template/lista_quadros}
 %\include{_template/lista_siglas}
 %\include{_template/lista_simbolos}
 \include{frontmatter/lista_acronimos}
 \include{frontmatter/sumario}
-
 
 % ----------------------------------------------------------
 % ELEMENTOS TEXTUAIS
@@ -266,13 +252,12 @@ COMPUTAÇÃO APLICADA}
 % espaçamento entre linhas 
 \DoubleSpacing
 
-
 \include{chapters/01_introducao}
 \include{chapters/02_cap2}
 \include{chapters/03_cap3}
 \include{chapters/04_cap4}
-\include{chapters/05_cap5}
-
+%\include{chapters/05_cap5}
+%\include{chapters/06_conclusao}
 
 % ---
 % Finaliza a parte no bookmark do PDF
@@ -280,8 +265,6 @@ COMPUTAÇÃO APLICADA}
 % e adiciona espaço de parte no Sumário
 % ---
 %\phantompart
-
-%\include{chapters/06_conclusao}
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
@@ -324,7 +307,6 @@ COMPUTAÇÃO APLICADA}
 
 %\end{apendicesenv}
 % ---
-
 
 % ----------------------------------------------------------
 % Anexos
