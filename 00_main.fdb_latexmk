@@ -1,0 +1,9 @@
+# Fdb version 4
+["pdflatex"] 0 "d:/dev/masters-dissertation/00_main.tex" "00_main.pdf" "00_main" 0 -1
+  "00_main.aux" 0 -1 0 "pdflatex"
+  "d:/dev/masters-dissertation/00_main.tex" 0 -1 0 ""
+  (generated)
+  "00_main.aux"
+  "00_main.log"
+  "00_main.pdf"
+  (rewritten before read)
