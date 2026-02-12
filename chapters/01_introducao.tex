@@ -1,74 +1,103 @@
 \chapter{Introdução}
 \label{c_introducao}
 
-A segurança cibernética consolidou-se como um pilar estratégico para a soberania nacional e a estabilidade econômica global. No entanto, o setor enfrenta um déficit de profissionais qualificados, fenômeno globalmente conhecido como \textit{Cybersecurity Skills Gap}. Relatórios recentes indicam que a força de trabalho atual precisa crescer significativamente para atender à demanda de proteção de dados e infraestruturas \cite{ISC2_2024}.
+A cibersegurança consolidou-se como um pilar estratégico para a soberania nacional e a para a estabilidade econômica global. No entanto, o setor enfrenta um déficit significativo de profissionais qualificados, fenômeno globalmente conhecido como \textit{Cybersecurity Skills Gap}. Relatórios recentes indicam que a força de trabalho atual precisa crescer para atender à crescente demanda por proteção de dados e de infraestruturas críticas globais \cite{ISC2_2024}.
 
-No Brasil, como uma das respostas a este desafio, foi instituído o Programa \textit{Hackers do Bem}, uma iniciativa financiada pelo \ac{MCTI} e executada pela \ac{RNP}, em parceria com o Senai e a Softex. O programa visa capacitar mais de 30 mil profissionais através de um modelo de ensino massivo, gamificado e escalável \cite{HackersDoBemManual}.
+O Estudo sobre a Força de Trabalho em Cibersegurança da ISC2\footnote{A ISC2 é uma associação global de membros sem fins lucrativos dedicada à formação, certificação e desenvolvimento de profissionais de segurança da informação, com foco na criação de padrões de excelência para o setor.}, discorre sobre como as pressões econômicas, exacerbadas por incertezas geopolíticas, levaram a reduções orçamentárias e de força de trabalho em diversos setores, enquanto as ameaças de cibersegurança e os incidentes de segurança de dados continuaram a crescer. Estima-se que a força de trabalho global de cibersegurança em 2024 seja de 5.468.173 profissionais. Este é um aumento de apenas 0,1\% em relação a 2023, ou seja, o crescimento da força de trabalho está desacelerando, considerando que houve um aumento de 8,7\% entre 2022 e 2023 \cite{ISC2_2023, ISC2_2024}.
 
-Paralelamente à escassez geral, observa-se uma disparidade de gênero acentuada no setor. Mulheres permanecem sub-representadas, enfrentando barreiras culturais e estruturais que dificultam não apenas o ingresso, mas especialmente, a permanência e a progressão na carreira. A Estratégia Nacional de Cibersegurança e o recente Decreto nº 12.573/2025 reforçam a necessidade de fomentar linhas de pesquisa que estimulem a formação de recursos humanos e a diversidade no setor \cite{Decreto12573}.
+Já em 2025, o mesmo relatório concluiu que a necessidade de habilidades específicas (\textit{skills}) tornou-se mais importante do que o aumento do quadro de funcionários (\textit{headcount}). Embora o número de profissionais tenha se estabilizado, o estudo revelou que 95\% dos entrevistados identificaram lacunas de competências em suas equipes. Essas lacunas não são genéricas, mas concentram-se em áreas técnicas (\textit{hard skills}), com destaque para Inteligência Artificial (41\%), Segurança em Nuvem (36\%) e Avaliação de Riscos (29\%). Simultaneamente, o relatório sublinha a premente necessidade de habilidades comportamentais (\textit{soft skills}), essenciais para a gestão de crises e a colaboração eficaz, sendo a capacidade de resolução de problemas e a comunicação assertiva as competências não técnicas mais requisitadas por gestores e profissionais da área \cite{ISC2_2025}.
 
-Neste contexto, esta dissertação investiga a eficácia das metodologias de ensino e retenção aplicadas em larga escala, especificamente sob a perspectiva de gênero, buscando compreender como mecanismos de gamificação e ranqueamento impactam a trajetória das estudantes no programa.
+A sub-representação feminina na cibersegurança constitui um fenômeno global persistente, corroborado por múltiplos relatórios da indústria. Embora a participação das mulheres tenha apresentado crescimento moderado na última década, elas ainda constituem uma minoria significativa. Dados do relatório global da Fortinet indicam que as mulheres correspondem, em média, apenas 27\% das equipes de \ac{TI} e segurança nas organizações pesquisadas \cite{Fortinet2025}. Esse resultado está alinhado às estimativas da ISC2 e a estudos acadêmicos recentes, que situam a participação feminina na força de trabalhoglobal entre 20\% e 25\%, evidenciando que, apesar das iniciativas de diversidade, o setor continua majoritariamente masculino \cite{ISC2_2025, SelmanHousein2025, Pacheco2024}. Além disso, observa-se uma disparidade geracional: enquanto mulheres representam 26\% dos profissionais com menos de 30 anos, elas compõem apenas 13\% da força de trabalho acima de 60 anos, indicando que o ingresso de novas profissionais ainda ocorre em ritmo insuficiente para compensar o déficit histórico de participação feminina \cite{ISC2_2023}.
+
+Paradoxalmente, essa sub-representação não decorre de uma falta de qualificação formal. Conforme apontado no relatório da ISC2, as mulheres na área são, em média, mais escolarizadas que os homens: 52\% delas possuem pós-graduação, comparado a apenas 44\% de seus pares masculinos. Contudo, essa qualificação superior não se traduz em equidade de poder ou remuneração. As mulheres ocupam apenas 17\% dos cargos de liderança executiva e enfrentam uma brecha salarial persistente, recebendo cerca de 12\% a menos que homens em posições equivalentes \cite{ISC2_2025, Pacheco2024}. Esses dados sugerem que a barreira não é apenas técnica, mas estrutural, impedindo a ascensão profissional feminina mesmo quando há competência comprovada.
+
+A literatura e os relatórios de mercado indicam que o problema se manifesta tanto na atração quanto na retenção de talentos, fenômeno frequentemente descrito como "vazamento de talentos" (\textit{leaky pipeline}). Estudos apontam que uma parcela significativa de mulheres que ingressa em carreiras tecnológicas acaba deixando a área, muitas vezes devido a ambientes profissionais excludentes e da falta de modelos de referência (\textit{role models}) \cite{Musuva2025, Pacheco2024}. Adicionalmente, observa-se uma fragilidade na base educacional: pesquisas indicam que uma parcela significativa de jovens mulheres relata que a cibersegurança não lhes foi apresentada como uma opção de carreira viável por educadores, perpetuando estereótipos que associam a área a um domínio predominantemente masculino e dificultando o preenchimento das vagas necessárias para a resiliência cibernética global \cite{Ramonyai2023, WEF2025}.
+
+No cenário brasileiro, a publicação do Decreto n.º 12.573/2025, que institui a nova Estratégia Nacional de Cibersegurança (E-Ciber), marca um avanço significativo na governança digital do país. O documento reforça a necessidade de fomentar linhas de pesquisa que estimulem a formação massiva de profissionais qualificados e a promoção da diversidade no setor. Dentre as ações estratégicas delineadas, destacam-se o incentivo à inclusão de temas de cibersegurança nos currículos de todos os níveis educacionais, a capacitação continuada de professores e gestores, e a implementação de campanhas nacionais de conscientização sobre o uso seguro do ciberespaço, visando criar uma cultura de segurança enraizada na sociedade \cite{Decreto12573, GSINacional}.
+
+
+Para alcançar seus objetivos, a E-Ciber foi estruturada em quatro eixos temáticos fundamentais, cada um com focos específicos de atuação:
+
+\begin{itemize}
+    \item \textbf{Proteção e Conscientização da Sociedade:} Este eixo concentra-se na criação de um ambiente digital seguro para o cidadão, com ênfase prioritária na proteção de grupos em situação de vulnerabilidade, como crianças, adolescentes, idosos e pessoas neurodivergentes, além de promover a educação digital em larga escala.
+    
+    \item \textbf{Segurança e Resiliência das Infraestruturas Críticas:} Visa garantir a continuidade e a integridade dos serviços essenciais (como energia, telecomunicações e finanças) e das infraestruturas críticas nacionais, assegurando que continuem operando mesmo diante de incidentes cibernéticos severos.
+    
+    \item \textbf{Cooperação e Integração:} Tem como objetivo romper os silos de informação, fomentando o intercâmbio ágil de dados sobre ameaças entre os setores público e privado, além de fortalecer a posição do Brasil em fóruns internacionais e redes de cooperação global.
+    
+    \item \textbf{Soberania Nacional e Governança:} Busca reduzir a dependência tecnológica externa do país em áreas estratégicas, incentivando o desenvolvimento de uma indústria nacional de cibersegurança robusta, o fomento à pesquisa e inovação (PD\&I) e o estabelecimento de um modelo nacional de maturidade em segurança cibernética.
+\end{itemize}
+
+Como resposta estratégica ao déficit de profissionais em cibersegurança no Brasil, foi instituído o Programa \textit{Hackers} do Bem. Trata-se de uma iniciativa financiada pelo \ac{MCTI} com recursos da Lei de Informática (Lei no 8.248), coordenada pela Softex e executada pela \ac{RNP} e pelo SENAI São Paulo. O programa tem como meta qualificar mais de 30 mil profissionais por meio de um ecossistema de ensino gratuito, escalável e fundamentado em gamificação e atividades práticas simuladas. Projetado para atender desde estudantes do ensino básico até profissionais em transição de carreira, o itinerário formativo é composto pelas trilhas de Nivelamento, Básico, Fundamental, Especializado e Residência Tecnológica, as quais são estruturadas para alinhar o desenvolvimento de competências técnicas às demandas da indústria e aos imperativos de soberania tecnológica nacional \cite{HackersDoBemManual}.
+
+O Programa \textit{Hackers} do Bem registrou um total de 150.832 inscritos, dos quais aproximadamente 100.000 ingressaram efetivamente no Ambiente Virtual de Aprendizagem (AVA). As metas de formação foram estruturadas para atender a esse volume massivo, visando qualificar 30.000 alunos nas etapas iniciais (Nivelamento e Básico), avançando para 3.000 no nível Fundamental e 2.000 no Especializado, culminando na especialização prática de 216 profissionais na Residência Tecnológica. Além da escala, o programa monitora indicadores demográficos para o setor, identificando que 22,45\% do total de inscritos se declaram mulheres, percentual que evidencia a necessidade contínua de ações afirmativas para a equidade de gênero na área. Recentemente, a iniciativa expandiu ainda mais seu alcance com a abertura de 25.000 novas vagas e já contabiliza mais de 36.000 certificados em todo o país\footnote{Dados do programa \textit{Hackers} do bem cedidos pela \acL{RNP}}.
+
+Considerando este cenário, esta dissertação investiga de que forma os programas de capacitação  em cibersegurança com alcance nacional e capacidade de atendimento em larga escala, como o Programa \textit{Hackers} do Bem, podem ser customizados de modo a ampliar o ingresso e a retenção de talentos femininos. Busca-se, ainda, compreender se as estratégias utilizadas nesses programas atuam como catalisadores de inclusão ou, ao contrário, configuram barreiras adicionais à formação e permanência de novas profissionais de cibersegurança.
 
 \section{Problema de Pesquisa}
 \label{s_problema_pesquisa}
 
-Apesar dos esforços para aumentar o ingresso de mulheres em cursos de tecnologia, a literatura aponta para um fenômeno de "vazamento de talentos" (\textit{leaky pipeline}), onde as taxas de evasão femininas superam as masculinas à medida que o nível técnico e a competitividade aumentam.
+Apesar da crescente demanda por profissionais de cibersegurança e dos esforços globais para diversificar a força de trabalho, as mulheres permanecem sub-representadas, ocupando apenas cerca de 25\% dos postos de trabalho globais na área \cite{Kshetri2021, ISC2_2023}. A literatura aponta para um fenômeno persistente de "vazamento de talentos" (\textit{leaky pipeline}), onde as taxas de evasão femininas superam as masculinas à medida que o nível técnico e a competitividade aumentam \cite{Pitman2022}. Este fenômeno não é apenas uma questão de recrutamento, mas de retenção, influenciada por barreiras estruturais, culturais e pedagógicas \cite{BothaBadenhorst2022, SelmanHousein2025}.
 
-No Programa \textit{Hackers} do Bem, a progressão entre os níveis (Nivelamento, Básico, Fundamental, Especializado e Residência) é estruturada por critérios de desempenho, baseados em pontos de experiência, \textit{quizzes} e competições práticas do tipo \ac{CTFs}, resultando em um ranqueamento \cite{HackersDoBemManual}.
+No contexto do Programa \textit{Hackers} do Bem, dados preliminares indicam uma materialização deste cenário: enquanto as mulheres representam 22,45\% do total de inscritos, sua participação cai para aproximadamente 13\% no início das fases síncronas e especializadas. A progressão entre os níveis do programa (Nivelamento, Básico, Fundamental, Especializado e Residência) é regida por um sistema de ranqueamento baseado no acúmulo de pontos de experiência (\textit{XP}), desempenho em \textit{quizzes}, atividades práticas, simulações e algumas competições práticas do tipo \ac{CTFs} \cite{HackersDoBemManual}.
 
-O problema de pesquisa reside na hipótese de que o \textit{design} instrucional e os mecanismos de gamificação competitiva, se não ajustados para a diversidade, podem atuar inadvertidamente como fatores de exclusão. Diante disso, define-se a seguinte Questão de Pesquisa Principal:
+Estudos indicam que competições de cibersegurança, frequentemente focadas em disputas individuais e rankings públicos, podem reforçar estereótipos masculinos de competitividade e isolamento, desestimulando a participação de grupos sub-representados que tendem a valorizar abordagens colaborativas e aprendizagem baseada em impacto social \cite{Horcher2021, Gough2024}. A literatura sugere que a gamificação competitiva, se não ajustada para a diversidade, pode atuar inadvertidamente como uma barreira de entrada e permanência, exacerbando a insegurança, a síndrome do impostor e a baixa sensação de autoeficácia entre estudantes mulheres \cite{Hogan2025, Kanij2025}.
+
+No contexto das trajetórias femininas, a autoeficácia é definida na literatura como a crença das mulheres em sua própria capacidade de organizar e executar ações necessárias para alcançar determinados resultados, configurando-se como um importante preditor do engajamento, da persistência e do sucesso em carreiras tecnológicas \cite{Pacheco2024}. No contexto específico da cibersegurança, mulheres frequentemente relatam níveis inferiores de autoeficácia em comparação aos seus pares masculinos, o que pode resultar em uma postura de maior aversão ao risco e limitar a progressão na carreira, independentemente da competência real adquirida \cite{SelmanHousein2025, Benson2025}. Contudo, evidências indicam que a autoeficácia não é uma característica imutável, podendo ser fortalecida por meio de intervenções pedagógicas intencionais, como a utilização de apoio estruturado em desafios práticos e a promoção de ambientes colaborativos que validem a identidade profissional das estudantes \cite{Gough2024}.
+
+
+Adicionalmente, há uma escassez de estudos que analisem quantitativamente o impacto de intervenções no \textit{design} de cursos de cibersegurança especificamente voltados para a retenção de mulheres, em oposição a apenas esforços de recrutamento \cite{SelmanHousein2025}. Considerando que o \textit{design} de jogos educacionais muitas vezes reflete os vieses culturais de seus criadores, existe o risco de que os mecanismos de seleção do programa reproduzam as desigualdades que visam combater \cite{Coenraad2020}.
+
+Diante deste cenário, define-se a seguinte Questão de Pesquisa Principal:
 
 \begin{quote}
-\textbf{QP:} Como programas de capacitação em larga escala, especificamente o \textit{Hackers} do Bem, podem ser otimizados para mitigar o \textit{gap} de gênero e aumentar a retenção de talentos femininos na força de trabalho de cibersegurança?
+\textbf{QP:} Como programas de capacitação em cibersegurança com capacidade de atendimento em larga escala, como o \textit{Hackers} do Bem, podem ser customizados para ampliar o ingresso e a permanência de talentos femininos?
 \end{quote}
 
 Esta questão desdobra-se nas seguintes questões específicas:
 \begin{itemize}
-    \item \textbf{QP1:} Quais são as principais barreiras de entrada e estratégias de permanência para mulheres identificadas no estado da arte?
-    \item \textbf{QP2:} Qual é o perfil de participação e a taxa de evasão feminina ao longo das trilhas de formação do programa?
-    \item \textbf{QP3:} De que maneira elementos como a gamificação e o ranqueamento influenciam o engajamento e o desempenho das participantes do gênero feminino?
-    \item \textbf{QP4:} Que diretrizes estratégicas podem ser formuladas para adaptar o programa visando a equidade de gênero?
-\end{itemize}
+    \item \textbf{QP1:} Quais fatores socioculturais e estruturais são apontados na literatura como determinantes para a baixa adesão e permanência em programas de capacitação em cibersegurança, e quais intervenções têm sido adotadas para aumentar a adesão e mitigar a evasão do publico feminino?
+    \item \textbf{QP2:} Quais abordagens pedagógicas são adotadas em programas de capacitação em cibersegurança e de que maneira elas impactam a adesão e a permanência do público feminino nesses programas?
+    \item \textbf{QP3:} Em que medida a customização de trilhas de aprendizagem e a implementação de mecanismos colaborativos podem influenciar a percepção de autoeficácia e a intenção de permanência das estudantes, em programas como o \textit{Hackers} do Bem? \end{itemize}
 
 \subsection{Solução Proposta}
 \label{ss_solucao_proposta}
 
-A solução proposta nesta pesquisa é o desenvolvimento de um \textbf{Framework de Diretrizes de Inclusão e Retenção}, fundamentado em evidências empíricas. A construção deste artefato baseia-se em uma abordagem de métodos mistos, que combina:
-\begin{enumerate}
-    \item A mineração de dados educacionais dos participantes do \textit{Hackers} do Bem, correlacionando métricas de desempenho técnico e gamificação com as taxas de evasão por gênero.
-    \item A análise qualitativa da percepção das alunas, para compreender os fatores subjetivos que motivam a desistência ou a permanência.
-\end{enumerate}
+A solução proposta nesta pesquisa consiste no desenvolvimento de um \textit{framework} de diretrizes voltado à inclusão e retenção de mulheres em programas de capacitação em cibersegurança, fundamentado em evidências empíricas. A construção deste artefato fundamenta-se, além da literatura relacionada, em uma abordagem de métodos mistos, que combina a mineração de dados educacionais de participantes do Programa \textit{Hackers} do Bem, correlacionando métricas de desempenho técnico às taxas de evasão por gênero, bem como a análise qualitativa da percepção das alunas, com o objetivo de compreender os fatores subjetivos que influenciam a permanência ou a desistência.
 
-O \textit{framework} visa fornecer recomendações práticas para ajustes no \textit{design} do programa, focando em neutralizar vieses nos critérios de avaliação e promover um ambiente de aprendizado que favoreça a autoeficácia feminina.
+O \textit{framework} proposto visa fornecer recomendações para aprimoramentos no \textit{design} de programas de treinamento em cibersegurança, focando em neutralizar vieses nos critérios de avaliação e promover um ambiente de aprendizado que favoreça a autoeficácia, atração e retenção de mulheres em treinamentos com o perfil semelhante ao do Programa Hackers do Bem.
 
 \subsection{Delimitação de Escopo}
 \label{ss_delimitacao_escopo}
 
-O escopo da pesquisa limita-se à análise dos dados das turmas do Programa \textit{Hackers} do Bem realizadas entre 2024 e 2025. A análise quantitativa é voltada para as transições do funil de formação (do Nivelamento à Residência Tecnológica). Serão considerados apenas dados anonimizados, respeitando a Lei Geral de Proteção de Dados (LGPD). Não faz parte do escopo a alteração do código-fonte da plataforma de ensino ou a intervenção direta nas turmas em andamento, caracterizando-se como um estudo observacional e propositivo.
+O escopo da pesquisa limita-se à análise dos dados das turmas do Programa \textit{Hackers} do Bem realizadas entre 2024 e 2026. A análise quantitativa é voltada para as transições do funil de formação (do Nivelamento à Residência Tecnológica). Não faz parte do escopo a alteração do código-fonte da plataforma de ensino ou a intervenção direta nas turmas em andamento, caracterizando-se como um estudo observacional e propositivo.
 
 \subsection{Justificativa}
 \label{ss_justificativa}
 
-A justificativa para este trabalho é tripla: social, acadêmica e estratégica.
-\begin{itemize}
-    \item \textbf{Social e Estratégica:} O Decreto nº 12.573, de 4 de agosto de 2025, estabelece como objetivo da Política Nacional de Cibersegurança o incentivo à criação de linhas de pesquisa e o estímulo à formação de recursos humanos \cite{Decreto12573}. Garantir que mulheres concluam essa formação é essencial para maximizar o retorno do investimento público realizado no programa.
-    \item \textbf{Acadêmica:} Revisões sistemáticas recentes, como a de \citeonline{SelmanHousein2025}, apontam a escassez de estudos que apresentem "métricas de impacto quantificáveis" sobre intervenções de gênero. Esta dissertação contribui para preencher essa lacuna ao analisar dados reais de um programa massivo.
-    \item \textbf{Técnica:} Estudos indicam que a diversidade em equipes de segurança aumenta a eficiência na resolução de problemas complexos \cite{Pacheco2024}. Mitigar a evasão feminina não é apenas uma questão de justiça social, mas um requisito para a eficácia da defesa cibernética nacional.
-\end{itemize}
+Sob a perspectiva socioeconômica, a relevância desta pesquisa fundamenta-se na necessidade de investigar meios de mitigar o déficit global da força de trabalho em cibersegurança, em um cenário no qual a demanda por profissionais qualificados supera a oferta disponível. Relatórios de mercado indicam que a escassez de talentos não pode ser resolvida sem a inclusão efetiva da população feminina, que atualmente representa uma parcela minoritária do setor \cite{Pacheco2024}. Para além do aspecto quantitativo, a literatura técnica aponta que a diversidade em equipes de segurança resulta em maior eficiência operacional e melhor desempenho na resolução de problemas complexos, uma vez que diferentes perspectivas cognitivas reduzem pontos cegos em estratégias de defesa \cite{Benson2025}. Portanto, investigar os fatores que influenciam a permanência de mulheres em programas de capacitação (QP1) constitui um dos requisitos para que iniciativas de formação em larga escala atinjam seus objetivos de suprir a demanda do mercado.
+
+No âmbito acadêmico, este trabalho endereça uma lacuna identificada em revisões sistemáticas da literatura recentes, que apontam a escassez de estudos focados em métricas de impacto quantificáveis sobre a retenção de mulheres, em contraposição à vasta literatura existente sobre recrutamento e interesse inicial em formações em cibersegurança \cite{SelmanHousein2025}. Enquanto muitos trabalhos descrevem barreiras culturais de entrada de forma genérica, há uma carência de investigações que analisem como as metodologias pedagógicas impactam a continuidade da formação feminina. Ao analisar dados reais de um programa massivo, esta dissertação contribui para o estado da arte ao analisar as estratégias de retenção empregadas e poderá fazer proposições de melhorias e de novas estratégias.
+
+Ainda na esfera acadêmica, a pesquisa aprofunda a discussão sobre as diferentes metodologias aplicadas em treinamentos de cibersegurança. Estudos indicam que mecanismos competitivos tradicionais, como competições do tipo \textit{Capture The Flag} (CTF) e \textit{leaderboards} públicos, podem inadvertidamente elevar a ansiedade de performance e diminuir a autoeficácia em grupos sub-representados, caso não sejam equilibrados com abordagens colaborativas \cite{Hogan2025, Costa2025}. Ao investigar como esses elementos técnicos influenciam o engajamento no \textit{Hackers} do Bem, este estudo oferece uma contribuição teórica sobre como adaptar ferramentas pedagógicas para transformar ambientes competitivos em espaços de fomento à competência técnica e ao pertencimento.
+
+Por fim, a análise do Programa \textit{Hackers} do Bem como estudo de caso oferece uma oportunidade de validar diretrizes de customização em um ambiente de ensino em larga escala (QP3). Diferentemente de estudos limitados a salas de aula pequenas ou pilotos controlados, a escala deste programa permite verificar a aplicabilidade de estratégias de intervenção em um cenário real de formação massiva. O resultado esperado é a formulação de diretrizes baseadas em evidências que permitam reduzir as taxas de evasão.
 
 \section{Objetivos}
 \label{s_objetivos}
 
+Esta seção formaliza os objetivos do trabalho, conforme descrito a seguir.
+
 \subsection{Objetivo Geral}
 \label{ss_objetivo_geral}
 
-Propor e validar um conjunto de diretrizes para o aumento da retenção feminina em programas de capacitação em cibersegurança, baseadas na análise de dados de engajamento e evasão do Programa \textit{Hackers} do Bem.
+Definir e validar um conjunto de diretrizes para o aumento da atração e retenção feminina em programas de capacitação em cibersegurança, baseadas na análise de dados de engajamento, desempenho e permanência do público feminino do Programa \textit{Hackers} do Bem.
 
 \subsection{Objetivos Específicos}
 \label{ss_objetivos_especificos}
 
 \begin{itemize}
-    \item Mapear, através de \ac{RSL}, as estratégias de retenção e barreiras de gênero documentadas na literatura.
+    \item Mapear as estratégias de retenção e barreiras de gênero documentadas na literatura, por meio de \ac{RSL}
     \item Analisar quantitativamente o funil de aprovação do programa, identificando os pontos críticos de evasão feminina.
     \item Avaliar a correlação entre os mecanismos de gamificação (\ac{XP}, Ranking) e o desempenho das participantes.
     \item Elaborar o \textit{Framework de Diretrizes} e validá-lo analiticamente através da comparação com \textit{benchmarks} da literatura.
@@ -77,18 +106,30 @@ Propor e validar um conjunto de diretrizes para o aumento da retenção feminina
 \section{Metodologia}
 \label{s_metodologia}
 
+Esta seção apresenta a metodologia de pesquisa adotada e o procedimento metodológico
+aplicado para realização deste trabalho.
+
 \subsection{Metodologia da Pesquisa}
 \label{ss_metodologia_pesquisa}
 
-Esta pesquisa classifica-se como aplicada, de natureza exploratória e descritiva, utilizando uma abordagem de métodos mistos. A vertente quantitativa utiliza técnicas de \ac{EDM} para processar os \textit{logs} da plataforma de ensino. A vertente qualitativa utiliza levantamentos de percepção (\textit{surveys}) fundamentados em escalas de autoeficácia e motivação \cite{Costa2025}.
+Este trabalho adota como abordagem metodológica o método hipotético-dedutivo. A investigação a partir da lacuna de conhecimento identificada na literatura sobre o fenômeno do "vazamento de talentos" (\textit{leaky pipeline}) em cibersegurança \cite{Pitman2022} e a hipótese de que mecanismos de gamificação competitiva, quando não ajustados para a diversidade, impactam negativamente a autoeficácia e a retenção de mulheres \cite{Hogan2025, Coenraad2020}. Tais hipóteses são avaliadas a partir da análise dos documentos, regras de negócio e dados de participação do programa objeto deste estudo.
+
+Além disso, este trabalho classifica-se como uma pesquisa aplicada, voltada a produzir conhecimento para problemas práticos, especificamente a disparidade de gênero em programas de capacitação em larga escala em cibersegurança. Quanto ao ponto de vista da avaliação, adota-se uma abordagem qualitativa baseada em estudo de caso, realizando uma análise dos recursos pedagógicos, do sistema de ranqueamento e das regras de progressão descritas programa \textit{Hackers} do Bem \cite{HackersManual}.
+
+Por fim, esta pesquisa possui uma natureza exploratória e descritiva. Exploratória, pois investiga a correlação entre o \textit{design} de programas de treinamento em cibersegurança e a percepção de competência técnica de grupos sub-representados \cite{Horcher2021}. Descritiva, pois detalha o funcionamento do ecossistema do programa \textit{Hackers} do Bem, estabelecendo conexões com a bibliografia geral sobre educação em cibersegurança e estratégias de retenção de talentos.
 
 \subsection{Procedimentos Metodológicos}
 \label{ss_procedimentos_metodologicos}
 
-Os procedimentos foram estruturados nas seguintes etapas:
+Nesta seção, são apresentados os procedimentos metodológicos aplicados para o atingimento dos objetivos propostos anteriormente, a fim de fundamentar e analisar a abordagem proposta. As fases já desenvolvidas e as que ainda serão desenvolvidas no trabalho são:
+
 \begin{enumerate}
-    \item \textbf{\acl{RSL}:} Executada conforme o protocolo \ac{PICO}, nas bases ACM, IEEE, Scopus e Google Scholar, para fundamentar as categorias de análise.
-    \item \textbf{Coleta e Tratamento de Dados:} Obtenção dos registros do programa junto à \ac{RNP} e aplicação de questionários.
+    \item \textbf{\acl{RSL}:} Executada conforme o protocolo \ac{PICO}, nas bases ACM, IEEE, Scopus e Google Scholar, para fundamentar o estado da arte atual.
+    
+    \item \textbf{Análise de trabalhos relacionados:} Leitura e análise dos trabalhos selecionados pela \ac{RSL} a fim de categorizar e extrair dados e quais conclusões esses artigos chegaram a cerca da presença feminina em programas de formação em cibersegurança.
+    
+    \item \textbf{Coleta e Tratamento de Dados:} Obtenção dos registros do programa junto à \ac{RNP} e aplicação de questionários
+    \
     \item \textbf{Análise de Dados:} Processamento estatístico para cálculo de taxas de evasão e correlação de variáveis.
     \item \textbf{Definição das Diretrizes:} Síntese dos achados em recomendações práticas para o programa.
 \end{enumerate}
