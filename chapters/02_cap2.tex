@@ -35,7 +35,7 @@ A E-Ciber estrutura-se em quatro eixos temáticos que orientam as iniciativas p�
 
 A diretriz de formação em escala (Eixo IV) fundamenta a transição de modelos de treinamento restritos para iniciativas de grande abrangência (QP2), alinhando-se à necessidade urgente de reduzir o débito tecnológico do país em áreas emergentes. O relatório \textit{Global Cybersecurity Outlook 2025} do \ac{WEF} observa que a E-Ciber, ao priorizar o investimento em educação, busca abordar a iniquidade cibernética (\textit{cyber inequity}) que afeta desproporcionalmente setores com menos recursos \cite{WEF2025}.
 
-É neste contexto regulatório que se insere o Programa \textit{Hackers} do Bem, financiado pelo \acf{MCTI} com recursos da Lei de Informática (Lei nº 8.248/1991) e executado pela \acf{RNP} em parceria com a Softex e o \acf{SENAI} São Paulo\cite{Lei8248, MCTI2025}. O programa atua como um instrumento operacional para atingir as metas de capacitação massiva estipuladas pelo Estado, oferecendo um itinerário formativo gratuito que busca atender à escala demandada pela E-Ciber.
+É neste contexto regulatório que se insere o Programa \textit{Hackers} do Bem, financiado pelo \acf{MCTI} com recursos da Lei de Informática (Lei nº 8.248/1991) e executado pela \acf{RNP} em parceria com a Softex e o \acf{SENAI} São Paulo \cite{Lei8248, MCTI2025}. O programa atua como um instrumento operacional para atingir as metas de capacitação massiva estipuladas pelo Estado, oferecendo um itinerário formativo gratuito que busca atender à escala demandada pela E-Ciber.
 
 Nesta dissertação, o Programa \textit{Hackers} do Bem é analisado como estudo de caso para investigar como essa diretriz de massificação interage com as necessidades específicas de inclusão e retenção, verificando se a escala proposta pela política pública é compatível com as estratégias de personalização necessárias para a permanência de grupos sub-representados, como o público feminino.
 
@@ -65,7 +65,7 @@ Para aquelas que superam as barreiras iniciais de entrada, a permanência torna-
 \subsection{A Importância das \textit{Soft Skills} na Retenção}
 \label{ss_importancia_soft_skills_retencao}
 
-Uma lacuna crítica identificada na formação tradicional em cibersegurança é a subvalorização das competências comportamentais e interpessoais em detrimento das habilidades puramente técnicas (\textit{hard skills}). O relatório \textit{State of Cybersecurity 2025} destaca que, além do conhecimento técnico, atributos como automotivação (32\%), liderança (31\%), ética de trabalho (30\%) e comunicação (21\%) são considerados essenciais pelos empregadores para o desempenho eficaz das funções de segurança \cite{StateOfCybersecurity2025}. A ausência de desenvolvimento intencional dessas competências nos currículos de formação cria um descompasso entre a preparação acadêmica e a realidade da gestão de crises e defesa cibernética.
+Uma lacuna crítica identificada na formação tradicional em cibersegurança é a subvalorização das competências comportamentais e interpessoais em detrimento das habilidades puramente técnicas (\textit{hard skills}). O relatório \textit{State of Cybersecurity 2025} destaca que, além do conhecimento técnico, atributos como automotivação (32\%), liderança (31\%), ética de trabalho (30\%) e comunicação (21\%) são considerados essenciais pelos empregadores para o desempenho eficaz das funções de segurança \cite{ISACA2025}. A ausência de desenvolvimento intencional dessas competências nos currículos de formação cria um descompasso entre a preparação acadêmica e a realidade da gestão de crises e defesa cibernética.
 
 No recorte de gênero, \citeonline{Benson2025} demonstram que as mulheres frequentemente aportam competências vitais para o setor, como resiliência relacional, empatia, colaboração e pensamento inovador. Contudo, os autores argumentam que os \textit{frameworks} de competências e os processos de avaliação em cursos de cibersegurança falham ao não formalizar essas \textit{soft skills} como requisitos de carreira. Essa invisibilidade curricular contribui para a baixa autoeficácia feminina (QP3), pois as estudantes não veem suas aptidões de liderança e resolução colaborativa de problemas serem validadas em ambientes focados exclusivamente em \textit{flags} técnicas e competição individual.
 
@@ -90,7 +90,13 @@ Sob a perspectiva de inclusão de gênero, a estrutura da gamificação desempen
 
 As competições do tipo \acf{CTF} consolidaram-se como o padrão \textit{de facto} para o treinamento prático e a avaliação de competências técnicas em segurança da informação. Segundo \citeonline{Cole2022}, estes exercícios diferenciam-se de laboratórios tradicionais por possuírem duas características essenciais: um \enquote{caminho de solução subespecificado}, que exige do aluno a descoberta autônoma das etapas de resolução, e um \enquote{símbolo tangível de sucesso} (a \textit{flag}), que valida inequivocamente a conclusão do desafio.
 
-A literatura categoriza os \ac{CTFs} em formatos distintos, sendo os mais relevantes para o ensino massivo: \begin{itemize} \item \textbf{\textit{Jeopardy}:} Desafios estáticos segregados por categorias (como Criptografia, Web, Forense e Engenharia Reversa). Neste modelo, os participantes resolvem problemas independentes para obter pontos. \citeonline{Tshekiso2025} argumentam que este formato é o mais adequado para iniciantes e para escala massiva, pois permite o aprendizado progressivo e \textit{feedback} imediato sem a complexidade de interação direta com adversários. É o formato tipicamente adotado em eventos competitivos promovidos por programas de capacitação, como os relatados nos eventos do \textit{Hackers} do Bem (ex: \enquote{CTF Para Elas}) \cite{PalestraHDB}. \item \textbf{\textit{Attack-Defense}:} Equipes possuem sua própria rede ou servidor para defender, enquanto tentam atacar a infraestrutura das equipes adversárias em tempo real. Este formato exige conhecimentos avançados e coordenação de time, simulando um cenário de ciberguerra ativo \cite{Cole2022}. \end{itemize}
+A literatura categoriza os \ac{CTFs} em formatos distintos, sendo os mais relevantes para o ensino massivo:
+
+\begin{itemize}
+    \item \textbf{\textit{Jeopardy}:} Desafios estáticos segregados por categorias (como Criptografia, Web, Forense e Engenharia Reversa). Neste modelo, os participantes resolvem problemas independentes para obter pontos. \citeonline{Tshekiso2025} argumentam que este formato é o mais adequado para iniciantes e para escala massiva, pois permite o aprendizado progressivo e \textit{feedback} imediato sem a complexidade de interação direta com adversários. É o formato tipicamente adotado em eventos competitivos promovidos por programas de capacitação, como os relatados nos eventos do \textit{Hackers} do Bem (ex: \enquote{CTF Para Elas}) \cite{PalestraHDB}.
+
+    \item \textbf{\textit{Attack-Defense}:} Equipes possuem sua própria rede ou servidor para defender, enquanto tentam atacar a infraestrutura das equipes adversárias em tempo real. Este formato exige conhecimentos avançados e coordenação de time, simulando um cenário de ciberguerra ativo \cite{Cole2022}.
+\end{itemize}
 
 Embora eficazes para o desenvolvimento de \textit{hard skills}, a aplicação universal destes modelos apresenta desafios sob a ótica da inclusão (QP2). \citeonline{Horcher2021} alerta que os \ac{CTFs} tradicionais frequentemente refletem o viés cultural de seus criadores, priorizando dinâmicas de \enquote{soma zero} e agressividade competitiva. A autora sugere que este ambiente pode desestimular participantes de grupos sub-representados, como mulheres, que tendem a apresentar maior engajamento em contextos que valorizam a colaboração e a resolução de problemas com propósito social, em detrimento da pura dominação técnica de um oponente.
 
@@ -114,32 +120,89 @@ Nesta dissertação, o Programa \textit{Hackers} do Bem é analisado como estudo
 \label{ss_objetivos_estrutura_formacao}
 
 Instituído no contexto da Lei de TICs (Lei nº 8.248/1991) e alinhado aos objetivos da Estratégia Nacional de Cibersegurança (E-Ciber) de formação em escala \cite{Decreto12573, Lei8248}, o Programa \textit{Hackers} do Bem tem como meta a formação de recursos humanos qualificados em segurança da informação e privacidade. Sua execução é realizada pela \acf{RNP} em parceria com o SENAI-SP e a Softex \cite{MCTI2025}.
+
 A arquitetura pedagógica do programa foi desenhada para atender a um público massivo, estruturando-se em cinco níveis progressivos de complexidade, que funcionam como um funil de especialização, conforme detalhado no Manual do Aluno \cite{HackersDoBemManual}:
-\begin{itemize} \item \textbf{Nivelamento e Básico:} Etapas de entrada, abertas ao público geral e realizadas na modalidade de ensino a distância (\ac{EAD}) assíncrono. O objetivo é uniformizar o conhecimento técnico em redes, sistemas operacionais, lógica de programação e fundamentos de segurança, permitindo o acesso de estudantes sem formação prévia na área.
-\item \textbf{Fundamental:} Esta etapa marca a transição para um modelo híbrido, introduzindo atividades síncronas e laboratórios práticos assistidos. O acesso a esta fase é limitado a um número específico de vagas, preenchidas por meio de processos de seleção baseados no desempenho das fases anteriores.
 
-\item \textbf{Especializado:} Nível voltado para o aprofundamento técnico, onde os alunos optam por trilhas específicas de carreira, tais como: \textit{Red Team} (Segurança Ofensiva), \textit{Blue Team} (Defesa e Monitoramento), Defesa Cibernética, Gestão de Riscos e Conformidade (GRC) e Desenvolvimento Seguro (\textit{DevSecOps}).
+\begin{itemize}
+    \item \textbf{Nivelamento e Básico:} Etapas de entrada, abertas ao público geral e realizadas na modalidade de ensino a distância (\ac{EAD}) assíncrono. O objetivo é uniformizar o conhecimento técnico em redes, sistemas operacionais, lógica de programação e fundamentos de segurança, permitindo o acesso de estudantes sem formação prévia na área.
 
-\item \textbf{Residência Tecnológica:} A etapa final consiste em uma imersão prática supervisionada, onde os estudantes atuam em projetos reais ou simulados nos Pontos de Presença da \ac{RNP}, visando a transição direta para o mercado de trabalho.
+    \item \textbf{Fundamental:} Esta etapa marca a transição para um modelo híbrido, introduzindo atividades síncronas e laboratórios práticos assistidos. O acesso a esta fase é limitado a um número específico de vagas, preenchidas por meio de processos de seleção baseados no desempenho das fases anteriores.
+
+    \item \textbf{Especializado:} Nível voltado para o aprofundamento técnico, onde os alunos optam por trilhas específicas de carreira, tais como: \textit{Red Team} (Segurança Ofensiva), \textit{Blue Team} (Defesa e Monitoramento), Defesa Cibernética, Gestão de Riscos e Conformidade (GRC) e Desenvolvimento Seguro (\textit{DevSecOps}).
+
+    \item \textbf{Residência Tecnológica:} A etapa final consiste em uma imersão prática supervisionada, onde os estudantes atuam em projetos reais ou simulados nos Pontos de Presença da \ac{RNP}, visando a transição direta para o mercado de trabalho.
 \end{itemize}
 Esta estrutura de múltiplos estágios permite que o programa atue simultaneamente na conscientização massiva (nos níveis iniciais) e na formação de especialistas de alta performance (nos níveis finais), respondendo à demanda da E-Ciber por capacitação em larga escala. No entanto, a transição entre o modelo assíncrono e o síncrono impõe barreiras de seleção que serão analisadas nesta pesquisa sob a ótica da retenção feminina.
 
-\subsection{Modelo de Gamificação e Critérios de Aprovação} \label{ss_modelo_gamificacao_criterios_aprovacao}
+\subsection{Modelo de Gamificação e Critérios de Aprovação}
+\label{ss_modelo_gamificacao_criterios_aprovacao}
+
 O avanço dos estudantes entre os níveis do Programa \textit{Hackers} do Bem não ocorre de maneira automática, sendo regido por um sistema híbrido de gamificação estrutural e avaliação acadêmica. Conforme detalhado no Manual de Aprovação \cite{HackersDoBemManual}, o modelo utiliza a acumulação de Pontos de Experiência (\ac{XP}) para mensurar o engajamento, enquanto notas em atividades práticas e teóricas aferem a competência técnica. A classificação para as fases com vagas limitadas (Fundamental, Especializado e Residência) depende estritamente da posição do aluno em um ranking geral, configurando um mecanismo de seleção competitivo.
+
 Esta arquitetura de progressão é analisada nesta pesquisa sob a ótica das QPs 2 e 3, investigando se a ênfase na competição por vagas atua como fator motivacional ou como barreira de permanência para o público feminino. O sistema opera em duas camadas distintas: a progressão visual (Emblemas) e a progressão funcional (Ranqueamento).
 
-\subsubsection{Mecânica de Pontuação e Emblemas} \label{sss_mecanica_pontuacao_emblemas}
+\subsubsection{Mecânica de Pontuação e Emblemas}
+\label{sss_mecanica_pontuacao_emblemas}
+
 A unidade fundamental de progresso no \ac{AVA} do Programa \textit{Hackers} do Bem é o Ponto de Experiência (\ac{XP}). Conforme a taxonomia apresentada por \citeonline{Coenraad2020}, este modelo classifica-se como \enquote{gamificação estrutural} (\textit{structural gamification}), caracterizada pela aplicação de elementos de \textit{design} de jogos — como pontos e recompensas — ao redor do conteúdo instrucional, sem necessariamente alterar a natureza do material de estudo. Neste sistema, cada interação do aluno, como o consumo de videoaulas, a leitura de \textit{e-books} e a realização de \textit{quizzes} de fixação, atribui uma quantidade predeterminada de pontos ao seu perfil.
-O acúmulo destes pontos desbloqueia emblemas (\textit{badges}) que atuam como indicadores visuais de senioridade e progressão na trilha formativa. A hierarquia de emblemas, descrita no manual do programa, estabelece a seguinte trajetória de evolução do estudante \cite{HackersDoBemManual}: \begin{itemize} \item \textbf{\enquote{Aspirante a Hacker}:} Concedido ao atingir a pontuação correspondente à conclusão do Nivelamento; \item \textbf{\enquote{Explorador de Códigos}:} Concedido no início da etapa Básica; \item \textbf{\enquote{Mestre de Segurança}:} Concedido após a conclusão do nível Fundamental; \item \textbf{\enquote{Guerreiro Digital}:} Concedido aos concluintes do nível Especializado; \item \textbf{\enquote{Hacker Lendário}:} Nível máximo, reservado aos participantes da Residência Tecnológica. \end{itemize}
+
+O acúmulo destes pontos desbloqueia emblemas (\textit{badges}) que atuam como indicadores visuais de senioridade e progressão na trilha formativa. A hierarquia de emblemas, descrita no manual do programa, estabelece a seguinte trajetória de evolução do estudante \cite{HackersDoBemManual}:
+
+\begin{itemize}
+    \item \textbf{\enquote{Aspirante a Hacker}:} Concedido ao atingir a pontuação correspondente à conclusão do Nivelamento;
+
+    \item \textbf{\enquote{Explorador de Códigos}:} Concedido no início da etapa Básica;
+
+    \item \textbf{\enquote{Mestre de Segurança}:} Concedido após a conclusão do nível Fundamental;
+
+    \item \textbf{\enquote{Guerreiro Digital}:} Concedido aos concluintes do nível Especializado;
+
+    \item \textbf{\enquote{Hacker Lendário}:} Nível máximo, reservado aos participantes da Residência Tecnológica.
+\end{itemize}
+
 Sob a ótica das questões de pesquisa desta dissertação (QP2 e QP3), a análise deste mecanismo é relevante pois a literatura sugere que recompensas extrínsecas, como emblemas, operam de forma distinta em diferentes grupos demográficos. \citeonline{Coenraad2020} alertam que a gamificação estrutural, se não acompanhada de narrativas que promovam o \enquote{engajamento epistêmico} (onde o aluno assume a identidade profissional), pode falhar em sustentar a retenção a longo prazo. Nesta pesquisa, os dados de engajamento (\ac{XP}) serão correlacionados com as taxas de evasão feminina para verificar se esses elementos visuais de conquista atuam como fatores de motivação eficazes ou se são insuficientes para mitigar as barreiras de autoeficácia enfrentadas pelas participantes.
 
-\subsubsection{O Funil de Ranqueamento e Classificação} \label{sss_funil_ranqueamento_classificacao}
+\subsubsection{O Funil de Ranqueamento e Classificação}
+\label{sss_funil_ranqueamento_classificacao}
+
 Enquanto os cursos de Nivelamento e Básico operam em modelo assíncrono massivo, a transição para o nível Fundamental marca o início do gargalo estrutural do programa, denominado nesta dissertação como \enquote{funil de seleção}. O acesso às aulas síncronas, mentorias e laboratórios avançados é restrito a um número limitado de vagas, preenchidas através de um algoritmo de ranqueamento.
-Em cenários onde o número de candidatos aptos supera o número de vagas — situação comum em programas de larga escala \cite{MCTI2025} — o manual estabelece critérios de desempate que priorizam a performance técnica. A ordem de prioridade para a classificação é: \begin{enumerate} \item Maior nota acumulada nas Atividades Práticas (laboratórios e simuladores); \item Maior nota na Avaliação Final (teórica); \item Maior nota nos \textit{Quizzes}; \item Maior pontuação de engajamento (\ac{XP}). \end{enumerate}
+
+Em cenários onde o número de candidatos aptos supera o número de vagas — situação comum em programas de larga escala \cite{MCTI2025} — o manual estabelece critérios de desempate que priorizam a performance técnica. A ordem de prioridade para a classificação é:
+
+\begin{enumerate}
+    \item Maior nota acumulada nas Atividades Práticas (laboratórios e simuladores);
+
+    \item Maior nota na Avaliação Final (teórica);
+
+    \item Maior nota nos \textit{Quizzes};
+
+    \item Maior pontuação de engajamento (\ac{XP}).
+\end{enumerate}
+
 Este modelo cria um ambiente de alta pressão por performance, onde o erro em atividades práticas penaliza diretamente a posição do aluno no ranking. \citeonline{Hogan2025} e \citeonline{Horcher2021} alertam que sistemas competitivos de \enquote{soma zero}, onde a ascensão de um participante implica na queda de outro, podem exacerbar a ansiedade e a síndrome do impostor em mulheres, levando à autoexclusão mesmo quando elas possuem a competência técnica necessária. Nesta pesquisa, os dados de evasão nas transições de nível serão correlacionados com essas métricas de ranqueamento para verificar a existência de disparidades de gênero no funil.
 
-\subsection{Visão Geral do Fluxo de Avaliação e Progressão} \label{ss_visao_geral_fluxo}
+\subsection{Visão Geral do Fluxo de Avaliação e Progressão}
+\label{ss_visao_geral_fluxo}
+
 Para consolidar o entendimento sobre a mecânica de seleção do Programa \textit{Hackers} do Bem, apresenta-se uma visão sistêmica do fluxo de avaliação. Conforme ilustrado na \autoref{fig:fluxo_avaliacao}, a jornada do estudante inicia-se no Curso de Nivelamento, caracterizado pelo acesso universal e progressão automática mediante a conclusão do conteúdo. Nesta etapa inicial, o foco reside na uniformização de conhecimentos basilares, sem a imposição de barreiras competitivas ou limitadores de vagas.
 A transição crítica ocorre após a conclusão do Curso Básico. Neste ponto, o sistema abandona a lógica de \enquote{avanço livre} e introduz o algoritmo de ranqueamento. O diagrama evidencia que a aprovação acadêmica (nota mínima) é uma condição necessária, mas não suficiente para a continuidade. O fator determinante torna-se o cálculo da pontuação acumulada (\ac{XP}) e o posicionamento do candidato dentro do limite rígido de vagas disponíveis para a etapa síncrona (Fundamental).
 O fluxo demonstra que os candidatos classificados avançam para a convocação e matrícula no Curso Fundamental, seguindo posteriormente para o Especializado e a Residência Tecnológica. Por outro lado, aqueles que atingem os critérios acadêmicos mas não obtêm pontuação suficiente para o corte de vagas não são reprovados, mas sim direcionados para uma lista de espera, aguardando uma \enquote{próxima onda} de ofertas. Esta estrutura visualiza o conceito de funil abordado nesta pesquisa, onde a gamificação atua como o mecanismo regulador do fluxo de entrada nas fases de maior especialização.
-\begin{figure}[htb] \centering \caption{Fluxograma do sistema de avaliação e progressão} \label{fig:fluxo_avaliacao} \includegraphics[width=0.9\textwidth]{figs/fluxo_progresso.png} \fonte{Elaborada pela autora com base nos processos do programa.} \end{figure}
+
+\begin{figure}[htb]
+    \centering
+    \caption{Fluxograma do sistema de avaliação e progressão}
+    \label{fig:fluxo_avaliacao}
+    \includegraphics[width=0.9\textwidth]{figs/fluxo_progresso.png}
+    \fonte{Elaborada pela autora com base nos processos do programa.}
+\end{figure}
+
+\section{Considerações Finais}
+\label{s_cap2_consideracoes_finais}
+
+A fundamentação teórica apresentada neste capítulo evidencia que o desafio da formação em cibersegurança no Brasil transcende a questão quantitativa do déficit de profissionais. A Estratégia Nacional de Cibersegurança (E-Ciber), instituída pelo Decreto nº 12.573/2025 \cite{Decreto12573}, estabelece a necessidade imperativa de capacitação em larga escala, uma demanda que o Programa \textit{Hackers} do Bem busca atender através de uma arquitetura pedagógica massiva, assíncrona e gamificada.
+
+Contudo, a literatura analisada aponta para uma tensão latente entre os mecanismos de escalabilidade técnica e as diretrizes de inclusão de gênero. Enquanto a gamificação estrutural — baseada em pontos de experiência (\ac{XP}), emblemas e \ac{CTFs} estilo \textit{Jeopardy} — viabiliza a avaliação automatizada de milhares de alunos simultaneamente (QP2), estudos como os de \citeonline{Horcher2021} e \citeonline{Hogan2025} alertam que essas mesmas dinâmicas podem atuar como barreiras de entrada. A ênfase em competição de \enquote{soma zero} e rankings públicos corre o risco de exacerbar a ansiedade de desempenho e diminuir a autoeficácia de mulheres, que frequentemente valorizam abordagens colaborativas e contextualizadas socialmente (QP3).
+
+O fenômeno do \textit{leaky pipeline}, discutido na Seção \ref{s_desigualdade_genero_ciberseguranca}, materializa-se no estudo de caso através da redução acentuada da participação feminina nas etapas de transição do programa (caindo de 22,45\% na entrada para cerca de 13\% nas fases especializadas). A teoria sugere que a intersecção entre barreiras culturais — como a falta de modelos de referência e a desvalorização das \textit{soft skills} \cite{Benson2025} — e um \textit{design} instrucional de alta pressão pode estar criando um filtro não intencional, que exclui candidatas qualificadas antes que atinjam a residência tecnológica.
+
+Desta forma, consolida-se a premissa teórica desta dissertação: a neutralidade algorítmica dos critérios de ranqueamento do Programa \textit{Hackers} do Bem não garante, por si só, a equidade de oportunidades. Este capítulo forneceu os subsídios conceituais — abrangendo desde as políticas públicas até a psicologia da gamificação — necessários para compreender as variáveis que serão investigadas na análise dos dados e na proposição das diretrizes de inclusão.
