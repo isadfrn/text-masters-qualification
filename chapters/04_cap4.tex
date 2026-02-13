@@ -116,18 +116,19 @@ A avaliação da retenção será conduzida através de uma análise sequencial,
     \item \textbf{Transição $T_4$ (Especializado $\rightarrow$ Residência):} A etapa final envolve a escolha de trilhas (Red Team, Blue Team, GRC). A análise focará na segregação vertical, verificando se há concentração feminina em trilhas de gestão em detrimento de trilhas técnicas ofensivas/defensivas.
 \end{itemize}
 
-\section{Validação da Proposta}
-\label{s_validacao_proposta}
+\section{Validação da Proposta} \label{s_validacao_proposta}
+Considerando que a implementação longitudinal das diretrizes em um programa massivo como o \textit{Hackers} do Bem excede o escopo temporal deste mestrado, a validação da efetividade (redução real da evasão) não é viável nesta etapa. Portanto, a validação do \textit{Framework} foca na validação de conteúdo e na validação de percepção, utilizando uma abordagem de triangulação com dois grupos distintos: especialistas e participantes.
+\subsection{Validação com Especialistas: Viabilidade e Pertinência} \label{ss_validacao_especialistas}
+O objetivo desta etapa é verificar se as diretrizes propostas são tecnicamente aplicáveis em um ambiente de larga escala e se são pedagogicamente adequadas para o público-alvo. O instrumento de coleta será um questionário estruturado, submetido a um painel de especialistas (docentes de cibersegurança, gestores de programas massivos e pesquisadores de gênero em TI).
+Os critérios de avaliação serão: \begin{itemize} \item \textbf{Pertinência:} A diretriz ataca o problema real de evasão diagnosticado na fase anterior? \item \textbf{Viabilidade de Escala:} A diretriz pode ser implementada para 30.000 alunos sem inviabilizar a operação técnica ou financeira do programa? (Baseado nas limitações de escala citadas em \citeonline{Tshekiso2025}). \item \textbf{Clareza:} A diretriz é compreensível para os gestores e desenvolvedores que deverão implementá-la? \end{itemize}
+\subsection{Validação com Participantes: Percepção de Valor e Intenção} \label{ss_validacao_participantes}
+Esta etapa visa avaliar a aderência das diretrizes às necessidades das alunas. Será aplicado um questionário a uma amostra de participantes do programa (ativas e evadidas), apresentando cenários hipotéticos baseados nas diretrizes do \textit{framework} (ex: \enquote{Se o curso oferecesse mentorias em grupo em vez de ranking individual, isso aumentaria sua vontade de continuar?}).
+Os construtos avaliados baseiam-se no modelo ARCS (Atenção, Relevância, Confiança e Satisfação) descrito por \citeonline{AlZoubi2024} e nas métricas de autoeficácia de \citeonline{Casey2023}:
+\begin{enumerate} \item \textbf{Relevância Percebida:} Avaliar se a contextualização narrativa proposta no \textit{framework} aumenta a percepção de utilidade do conteúdo para a carreira da aluna. \item \textbf{Segurança Psicológica:} Avaliar se as diretrizes de avaliação inclusiva reduzem a ansiedade gerada pela competição (validando os achados de \citeonline{Hogan2025}). \item \textbf{Intenção de Permanência:} Medir a probabilidade declarada de a aluna persistir no curso caso as diretrizes fossem implementadas. \end{enumerate}
+Desta forma, não se avalia se a evasão diminuiu (o que é impossível agora), mas se a \textbf{proposta tem potencial teórico e aceitação do público} para gerar esse resultado no futuro.
 
-A validação do \textit{Framework} proposto será realizada através da triangulação entre os achados quantitativos e a avaliação de especialistas e participantes.
 
-\begin{enumerate}
-    \item \textbf{Painel de Especialistas:} O \textit{framework} será submetido à avaliação de especialistas em educação em cibersegurança e diversidade. Será utilizado um instrumento estruturado para avaliar a clareza, a pertinência e a viabilidade de implementação das diretrizes propostas em escala nacional.
-
-    \item \textbf{Validação de Percepção:} As diretrizes refinadas serão apresentadas a uma amostra de participantes do programa, que avaliarão se as intervenções propostas (ex: mudança na narrativa dos desafios, alteração no peso do ranking) teriam impacto positivo em sua intenção de permanência.
-\end{enumerate}
-
-\section{Definição dos Instrumentos de Coleta (Abordagem GQM)}
+\section{Definição dos Instrumentos de Coleta}
 \label{s_definicao_gqm}
 
 Para garantir o alinhamento entre os objetivos da pesquisa e os dados coletados nos questionários, adota-se o paradigma \textit{Goal-Question-Metric} (GQM). Originalmente proposto por \citeonline{Basili1994} para engenharia de software, o GQM é amplamente utilizado em pesquisas acadêmicas para definir métricas de avaliação de forma hierárquica, partindo de um objetivo conceitual (Nível Conceitual), refinando-o em questões operacionais (Nível Operacional) e definindo as métricas quantitativas ou qualitativas necessárias para respondê-las (Nível Quantitativo).
