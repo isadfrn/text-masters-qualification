@@ -6,7 +6,7 @@ Neste capítulo, detalha-se a solução proposta para responder às questões de
 \section{O Framework de Diretrizes Proposto}
 \label{s_framework_proposto}
 
-A solução a ser desenvolvida é um artefato conceitual denominado \textbf{\textit{Framework} de Diretrizes para Retenção em Escala}. Este modelo foi desenhado para preencher a lacuna identificada na literatura entre a \enquote{pedagogia do acolhimento} (que exige alto nível de interação humana) e a \enquote{eficiência da escala} (necessária para reduzir o déficit de profissionais).
+A solução a ser desenvolvida é um artefato conceitual denominado \textbf{\textit{Framework} de Diretrizes para Retenção}. Este modelo foi desenhado para preencher a lacuna identificada na literatura entre a \enquote{pedagogia do acolhimento} (que exige alto nível de interação humana) e a \enquote{eficiência da escala} (necessária para reduzir o déficit de profissionais).
 Com base no \autoref{c_trabalhos_relacionados}, o \textit{framework} estrutura-se preliminarmente em três eixos estratégicos, que serão refinados a partir da análise dos dados do estudo de caso:
 
 \begin{itemize}
@@ -107,33 +107,32 @@ A \autoref{tab:variaveis_analise} apresenta o resumo das variáveis que compõem
 A avaliação da retenção será conduzida através de uma análise sequencial, modelada para espelhar a arquitetura de progressão do Programa \textit{Hackers} do Bem. O \textit{pipeline} de análise decompõe o fluxo em quatro estágios de transição críticos:
 
 \begin{itemize}
-    \item \textbf{Transição $T_1$ (Nivelamento $\rightarrow$ Básico):} Análise de desistência espontânea em fase assíncrona, onde não há barreiras de entrada competitivas.
+    \item \textbf{Transição $T_1$ (Nivelamento $\rightarrow$ Básico):} Análise de desistência espontânea em fase assíncrona, na qual não há barreiras de entrada competitivas.
 
     \item \textbf{Transição $T_2$ (Básico $\rightarrow$ Fundamental):} Este é o primeiro ponto crítico, onde o ranqueamento por \ac{XP} e notas define o acesso às vagas limitadas. A análise verificará se o critério de \ac{XP} afeta desproporcionalmente a classificação feminina.
 
     \item \textbf{Transição $T_3$ (Fundamental $\rightarrow$ Especializado):} Nesta fase, analisa-se a \enquote{Mecânica de Ondas} e listas de espera. O objetivo é identificar se mulheres são alocadas majoritariamente em listas de espera e se o tempo de aguardo impacta sua decisão de continuar no programa.
 
-    \item \textbf{Transição $T_4$ (Especializado $\rightarrow$ Residência):} A etapa final envolve a escolha de trilhas (Red Team, Blue Team, GRC). A análise focará na segregação vertical, verificando se há concentração feminina em trilhas de gestão em detrimento de trilhas técnicas ofensivas/defensivas.
+    \item \textbf{Transição $T_4$ (Especializado $\rightarrow$ Residência):} A etapa final envolve a escolha de trilhas (Red Team, Blue Team, GRC e Forense). A análise focará na segregação vertical, verificando se há concentração feminina em trilhas de gestão em detrimento de trilhas técnicas ofensivas/defensivas.
 \end{itemize}
 
-\section{Validação da Proposta} \label{s_validacao_proposta}
-Considerando que a implementação longitudinal das diretrizes em um programa massivo como o \textit{Hackers} do Bem excede o escopo temporal deste mestrado, a validação da efetividade (redução real da evasão) não é viável nesta etapa. Portanto, a validação do \textit{Framework} foca na validação de conteúdo e na validação de percepção, utilizando uma abordagem de triangulação com dois grupos distintos: especialistas e participantes.
-\subsection{Validação com Especialistas: Viabilidade e Pertinência} \label{ss_validacao_especialistas}
+\section{Avaliação da Proposta} \label{s_validacao_proposta}
+Considerando que a implementação longitudinal das diretrizes em um programa massivo como o \textit{Hackers} do Bem excede o escopo temporal deste mestrado, a avaliação da efetividade (redução real da evasão) não é viável nesta etapa. Portanto, a avaliação do \textit{Framework} foca na avaliação de conteúdo e na avaliação de percepção, utilizando uma abordagem de triangulação com dois grupos distintos: especialistas e participantes.
+\subsection{Avalidação com Especialistas: Viabilidade e Pertinência} \label{ss_validacao_especialistas}
 O objetivo desta etapa é verificar se as diretrizes propostas são tecnicamente aplicáveis em um ambiente de larga escala e se são pedagogicamente adequadas para o público-alvo. O instrumento de coleta será um questionário estruturado, submetido a um painel de especialistas (docentes de cibersegurança, gestores de programas massivos e pesquisadores de gênero em TI).
 Os critérios de avaliação serão: \begin{itemize} \item \textbf{Pertinência:} A diretriz ataca o problema real de evasão diagnosticado na fase anterior? \item \textbf{Viabilidade de Escala:} A diretriz pode ser implementada para 30.000 alunos sem inviabilizar a operação técnica ou financeira do programa? (Baseado nas limitações de escala citadas em \citeonline{Tshekiso2025}). \item \textbf{Clareza:} A diretriz é compreensível para os gestores e desenvolvedores que deverão implementá-la? \end{itemize}
-\subsection{Validação com Participantes: Percepção de Valor e Intenção} \label{ss_validacao_participantes}
+\subsection{Avaliação com Participantes: Percepção de Valor e Intenção} \label{ss_validacao_participantes}
 Esta etapa visa avaliar a aderência das diretrizes às necessidades das alunas. Será aplicado um questionário a uma amostra de participantes do programa (ativas e evadidas), apresentando cenários hipotéticos baseados nas diretrizes do \textit{framework} (ex: \enquote{Se o curso oferecesse mentorias em grupo em vez de ranking individual, isso aumentaria sua vontade de continuar?}).
 Os construtos avaliados baseiam-se no modelo ARCS (Atenção, Relevância, Confiança e Satisfação) descrito por \citeonline{AlZoubi2024} e nas métricas de autoeficácia de \citeonline{Casey2023}:
 \begin{enumerate} \item \textbf{Relevância Percebida:} Avaliar se a contextualização narrativa proposta no \textit{framework} aumenta a percepção de utilidade do conteúdo para a carreira da aluna. \item \textbf{Segurança Psicológica:} Avaliar se as diretrizes de avaliação inclusiva reduzem a ansiedade gerada pela competição (validando os achados de \citeonline{Hogan2025}). \item \textbf{Intenção de Permanência:} Medir a probabilidade declarada de a aluna persistir no curso caso as diretrizes fossem implementadas. \end{enumerate}
 Desta forma, não se avalia se a evasão diminuiu (o que é impossível agora), mas se a \textbf{proposta tem potencial teórico e aceitação do público} para gerar esse resultado no futuro.
-
 
 \section{Definição dos Instrumentos de Coleta}
 \label{s_definicao_gqm}
 
 Para garantir o alinhamento entre os objetivos da pesquisa e os dados coletados nos questionários, adota-se o paradigma \textit{Goal-Question-Metric} (GQM). Originalmente proposto por \citeonline{Basili1994} para engenharia de software, o GQM é amplamente utilizado em pesquisas acadêmicas para definir métricas de avaliação de forma hierárquica, partindo de um objetivo conceitual (Nível Conceitual), refinando-o em questões operacionais (Nível Operacional) e definindo as métricas quantitativas ou qualitativas necessárias para respondê-las (Nível Quantitativo).
 
-Nesta dissertação, o GQM é aplicado para estruturar os dois instrumentos de coleta primária: o questionário de percepção voltado às participantes do Programa \textit{Hackers} do Bem e o questionário de validação voltado aos especialistas.
+Nesta dissertação, o GQM é aplicado para estruturar os dois instrumentos de coleta primária: o questionário de percepção voltado às participantes do Programa \textit{Hackers} do Bem e o questionário de avaliação voltado aos especialistas.
 
 \subsection{Instrumento 1: Percepção das Participantes}
 \label{ss_gqm_participantes}
@@ -163,13 +162,13 @@ O desdobramento deste objetivo nas questões e métricas, associadas às hipóte
     \fonte{Elaborado pela autora com base em \citeonline{Basili1994} e na RSL.}
 \end{quadro}
 
-\subsection{Instrumento 2: Validação com Especialistas}
+\subsection{Instrumento 2: Avaliação com Especialistas}
 \label{ss_gqm_especialistas}
 
-Após a estruturação do \textit{Framework} de Diretrizes, este será submetido a um painel de especialistas para validação de conteúdo e viabilidade.
+Após a estruturação do \textit{Framework} de Diretrizes, este será submetido a um painel de especialistas para avaliação de conteúdo e viabilidade.
 
 \begin{itemize}
-    \item \textbf{Objetivo de Medição (Goal):} Avaliar o \textit{Framework} de Diretrizes proposto, com o propósito de validar sua viabilidade técnica e potencial de impacto, sob o ponto de vista de especialistas em educação em cibersegurança e gestores de programas, no contexto da implementação em larga escala.
+    \item \textbf{Objetivo de Medição (Goal):} Avaliar o \textit{Framework} de Diretrizes proposto, com o propósito de avaliar sua viabilidade técnica e potencial de impacto, sob o ponto de vista de especialistas em educação em cibersegurança e gestores de programas, no contexto da implementação em larga escala.
 \end{itemize}
 
 As questões norteadoras para os especialistas buscam mitigar o risco de propor soluções pedagogicamente ideais, mas tecnicamente inviáveis para o volume de alunos do \textit{Hackers} do Bem.
@@ -192,7 +191,7 @@ As questões norteadoras para os especialistas buscam mitigar o risco de propor 
 
 \subsection{Procedimento de Aplicação}
 
-Os formulários serão implementados em plataforma digital e distribuídos anonimamente. Para as alunas do Programa \textit{Hackers} do Bem, a amostragem será por conveniência, divulgada nos canais oficiais de comunicação do programa (Discord/E-mail), visando atingir tanto alunas ativas quanto evadidas. Para os especialistas, será utilizada uma amostragem intencional, selecionando perfis com experiência comprovada em gestão de programas de capacitação tecnológica ou pesquisa em gênero em \ac{STEM}.
+Para as alunas do Programa \textit{Hackers} do Bem, a amostragem será por conveniência, divulgada nos canais oficiais de comunicação do programa (E-mail), visando atingir tanto alunas ativas quanto evadidas. Para os especialistas, será utilizada uma amostragem intencional, selecionando perfis com experiência comprovada em gestão de programas de capacitação em cibersegurança ou pesquisa em gênero em \ac{STEM}.
 
 \section{Cronograma de Execução}
 \label{s_cronograma}
@@ -206,11 +205,11 @@ O planejamento da pesquisa considera os trâmites de aprovação ética e a disp
     \begin{tabular}{|l|c|c|c|c|}
         \hline
         \textbf{Atividade} & \textbf{Fev} & \textbf{Mar} & \textbf{Abr} & \textbf{Mai} \\ \hline
-        Submissão ao CEP e Ajustes & X & & & \\ \hline
-        Solicitação e Acesso aos Dados & X & & & \\ \hline
-        Coleta (Mineração e Questionários) & X & X & & \\ \hline
-        Análise de Dados e Refinamento do Framework & & X & & \\ \hline
-        Validação (Especialistas/Participantes) & & & X & \\ \hline
+        Submissão ao CEP e Ajustes & X & X & & \\ \hline
+        Solicitação e Acesso aos Dados & & X & & \\ \hline
+        Coleta (Mineração e Questionários) & & X & & \\ \hline
+        Análise de Dados e Descrição do Framework & & X & & \\ \hline
+        Avaliação (Especialistas/Participantes) & & & X & \\ \hline
         Escrita Final e Defesa & & & X & X \\ \hline
     \end{tabular}
     \fonte{Elaborado pela autora.}
@@ -225,9 +224,9 @@ Ao longo da fundamentação teórica e da revisão sistemática, identificou-se 
 \subsection{Síntese da Proposta}
 \label{s_sintese_proposta}
 
-Para responder a este desafio, esta dissertação propõe o desenvolvimento e a validação do \textbf{\textit{Framework} de Diretrizes para Inclusão e Retenção em Escala}. Diferentemente de soluções que focam apenas na atração (marketing) ou em ações pontuais, a proposta busca intervir na arquitetura pedagógica e nas regras de negócio dos programas de formação.
+Para responder a este desafio, esta dissertação propõe o desenvolvimento e a avalição do \textbf{\textit{Framework} de Diretrizes para Inclusão e Retenção}. Diferentemente de soluções que focam apenas na atração (\textit{marketing}) ou em ações pontuais, a proposta busca intervir na arquitetura pedagógica e nas regras de negócio dos programas de formação.
 
-A abordagem metodológica mista, detalhada no Capítulo 4, foi desenhada para ir além da percepção superficial. Ao cruzar os dados quantitativos de evasão e desempenho no funil do programa (mineração de dados) com a análise qualitativa da autoeficácia das participantes (survey), a pesquisa permitirá isolar variáveis críticas. Busca-se responder se a evasão feminina ocorre por falta de competência técnica ou se é induzida por mecanismos de \textit{design} — como a pressão de \textit{rankings} públicos e a ausência de narrativas contextualizadas — que afetam desproporcionalmente a confiança deste grupo.
+A abordagem metodológica mista, detalhada no Capítulo 4, foi desenhada para ir além da percepção superficial. Ao cruzar os dados quantitativos de evasão e desempenho no funil do programa (mineração de dados) com a análise qualitativa da autoeficácia das participantes (\textit{survey}), a pesquisa permitirá isolar variáveis críticas. Busca-se responder se a evasão feminina ocorre por falta de competência técnica ou se é induzida por mecanismos de \textit{design}, como a pressão de rankings públicos e a ausência de narrativas contextualizadas, que afetam desproporcionalmente a confiança deste grupo.
 
 \subsection{Contribuições Esperadas}
 \label{s_contribuicoes_esperadas}
@@ -235,7 +234,7 @@ A abordagem metodológica mista, detalhada no Capítulo 4, foi desenhada para ir
 Com a execução deste cronograma de pesquisa, espera-se entregar contribuições tanto para a academia quanto para a sociedade:
 
 \begin{itemize}
-    \item \textbf{Contribuição Científica:} O fornecimento de evidências empíricas sobre o impacto da gamificação competitiva na retenção de mulheres em cursos massivos (\ac{MOOCs}) de cibersegurança. A pesquisa pretende preencher a lacuna identificada por \citeonline{SelmanHousein2025} sobre a escassez de métricas rigorosas de avaliação de intervenções de gênero.
+    \item \textbf{Contribuição Científica:} O fornecimento de evidências empíricas sobre o impacto da gamificação competitiva na retenção de mulheres em \ac{MOOCs} de cibersegurança. A pesquisa pretende preencher a lacuna identificada por \citeonline{SelmanHousein2025} sobre a escassez de métricas rigorosas de avaliação de intervenções de gênero.
 
     \item \textbf{Contribuição Técnica:} A formalização de um \textit{framework} contendo diretrizes operacionais para os três eixos identificados (Narrativa, Avaliação e Suporte). Este artefato servirá de guia para que gestores educacionais e formuladores de políticas públicas possam desenhar programas que equilibrem a eficiência da automação com o acolhimento necessário para a diversidade.
 
@@ -244,4 +243,4 @@ Com a execução deste cronograma de pesquisa, espera-se entregar contribuiçõe
 
 \subsection{Próximos Passos}
 \label{s_proximos_passos}
-A pesquisa encontra-se em fase de qualificação, com a fundamentação teórica consolidada e a metodologia definida. Os próximos passos, conforme o cronograma apresentado, concentram-se na submissão do protocolo ao Comitê de Ética em Pesquisa (CEP), na obtenção da base de dados junto à coordenação do programa e na execução da análise diagnóstica. A validação das diretrizes junto a especialistas e participantes encerrará o ciclo, culminando na defesa da dissertação e na entrega de um modelo replicável para a educação em cibersegurança no Brasil.
+A pesquisa encontra-se em fase de qualificação, com a fundamentação teórica consolidada e a metodologia definida. Os próximos passos, conforme o cronograma apresentado, concentram-se na submissão do protocolo ao Comitê de Ética em Pesquisa (CEP), na obtenção da base de dados junto à coordenação do programa e na execução da análise diagnóstica. A avaliação das diretrizes junto a especialistas e participantes encerrará o ciclo, culminando na defesa da dissertação e na entrega de um modelo replicável para a educação em cibersegurança no Brasil.
