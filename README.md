@@ -1,8 +1,8 @@
-# Masters Dissertation
+# Masters Qualification
 
 ## About
 
-This repository contains the LaTeX source code and related files for my Master's dissertation.
+This repository contains the LaTeX source code and related files for my Master's qualification.
 
 ## Run
 
