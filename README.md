@@ -14,4 +14,4 @@ Maintaining
 
 ## License
 
-[All Rights Reserved](./LICENSE)
+[CC BY-NC-ND 4.0](./LICENSE)
