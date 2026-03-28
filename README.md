@@ -10,7 +10,7 @@ To compile this document, use [Overleaf](https://www.overleaf.com/). Simply uplo
 
 ## Status
 
-Maintaining
+Finished
 
 ## License
 
